@@ -1,0 +1,19 @@
+Assignment 1.9: Task Manager
+Open the Notepad application. Imagine that it's a frozen or malfunctioning application that we want to terminate.
+
+Open the Task Manager and use it to shut down Notepad. For the purposes of this task, do not close Notepad by just pressing the "X" in the window title bar.
+
+While at it, you can take a quick look at the Task Manager's process list for a quick look of all the stuff that is normally running on your computer.
+
+---
+
+Equivalent in Linux Mint: 
+
+jp@Silver:~$ pkill xed
+
+Another option:
+
+p@Silver:~$ pgrep xed
+7214
+jp@Silver:~$ kill 7214
+
