@@ -1,0 +1,1 @@
+GitLens extension installed and reviewed 
