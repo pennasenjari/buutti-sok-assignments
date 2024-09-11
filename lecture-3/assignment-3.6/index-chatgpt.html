@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+      input[type="text"], textarea {
+          padding: 4px;
+          width: 200px;
+          margin-bottom: 4px;
+      }
+      textarea {
+          height: 80px; /* Adjust the height */
+      }
+      button {
+          padding: 8px 12px;
+          background-color: #f44336;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          margin-top: 4px;
+      }
+      button:hover {
+          background-color: #d32f2f;
+      }
+      label {
+        display: inline-block;
+        width: 150px; /* Consistent width for labels */
+        vertical-align: middle; /* Align label with radio buttons */
+      }
+      .radio-group {
+        display: inline-block;
+        vertical-align: middle; /* Align radio buttons with label */
+        margin-bottom: 4px;
+      }
+      .radio-group input[type="radio"] {
+        margin-left: 5px; /* Optional small margin for spacing */
+        vertical-align: middle; /* Ensure radios align with label */
+      }
+  </style>
+</head>
+<body>
+
+  <label for="etunimi">Etunimi</label>
+  <input type="text" name="etunimi" id="etunimi">
+  <br>
+  <label for="sukunimi">Sukunimi</label>
+  <input type="text" name="sukunimi" id="sukunimi">
+  <br>
+  <label for="kuvaus">Kerro itsestäsi</label>
+  <textarea name="kuvaus" id="kuvaus"></textarea>
+  <br>
+
+  <!-- Radio button group with proper alignment -->
+  <label for="options">Kaikki OK?</label>
+  <div class="radio-group">
+    <input type="radio" name="options" id="option1" value="1">
+    <label for="option1">Kyllä</label>
+    
+    <input type="radio" name="options" id="option2" value="2">
+    <label for="option2">Ei</label>
+  </div>
+  <br>
+
+  <button onclick="resetInput()">Tyhjennä kentät</button>
+  <button>Lähetä</button>
+
+  <script>
+    function resetInput() {
+        document.getElementById('etunimi').value = '';
+        document.getElementById('sukunimi').value = '';
+        document.getElementById('kuvaus').value = '';
+        document.querySelector('input[name="options"]:checked').checked = false;
+    }
+  </script>
+
+</body>
+</html>
