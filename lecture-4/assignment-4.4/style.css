@@ -1,0 +1,24 @@
+li:nth-child(odd) {
+  background-color: green;
+}
+
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+ul li {
+  position: relative;
+  padding-left: 15px; /* Space for the vertical bar */
+  margin-top: 2px;
+}
+
+ul li::before {
+  content: ""; /* Add an empty content to replace the bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: black; /* Color of the vertical bar */
+}

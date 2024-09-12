@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  width: 1000px;
+  height: 100px;
+  justify-content: space-around;    
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-flow: row wrap;
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+}
+
+.inner1 {
+ background-color: red; 
+}
+
+.inner2 {
+  background-color: green; 
+ }
+
+ .inner3 {
+  background-color: blue; 
+ }
+
+ .inner4 {
+  background-color: yellow; 
+ }
+
+ .inner5 {
+  background-color: magenta; 
+ }
