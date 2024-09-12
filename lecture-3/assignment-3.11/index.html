@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3.11</title>
+  </head>
+  <body>
+    <h1>Assignment 3.11</h1>
+    <form>
+      <label for="name">What is your name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="reason">Why do you like programming:</label><br>
+      <textarea id="reason" name="reason"></textarea><br><br>
+
+      <label>What languages can you use?</label><br>
+      <input type="checkbox" id="javascript" name="languages" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" id="python" name="languages" value="Python">
+      <label for="python">Python</label>
+      <input type="checkbox" id="csharp" name="languages" value="C#">
+      <label for="csharp">C#</label><br><br>
+
+      <label for="proficiency">How proficient are you at programming?</label><br>
+      <input type="radio" id="prof1" name="proficiency" value="1">
+      <label for="prof1">1</label>
+      <input type="radio" id="prof2" name="proficiency" value="2">
+      <label for="prof2">2</label>
+      <input type="radio" id="prof3" name="proficiency" value="3">
+      <label for="prof3">3</label>
+      <input type="radio" id="prof4" name="proficiency" value="4">
+      <label for="prof4">4</label>
+      <input type="radio" id="prof5" name="proficiency" value="5">
+      <label for="prof5">5</label><br><br>
+
+      <label for="hours">How many hours per day do you spend programming:</label><br>
+      <input type="range" id="hours" name="hours" min="0" max="24"><br><br>
+
+      <label for="startdate">When did you start programming:</label><br>
+      <input type="date" id="startdate" name="startdate"><br><br>
+
+      <label for="editor">What is your favourite editor:</label><br>
+      <select id="editor" name="editor">
+      <option value="vscode">Visual Studio Code</option>
+      <option value="sublime">Sublime Text</option>
+      <option value="atom">Atom</option>
+      <option value="vim">Vim</option>
+      </select><br><br>
+
+      <label for="cv">Attach your CV:</label><br>
+      <input type="file" id="cv" name="cv"><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
