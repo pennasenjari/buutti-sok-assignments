@@ -1,0 +1,25 @@
+Program 1
+---
+print "Hello World!"
+
+Program 2
+---
+a = 3
+b = 5
+added = a + b
+subtracted = a - b
+multiplied = a * b
+divided = a / b
+
+print added
+print subtrated
+print multiplied
+print divided
+
+Program 3
+---
+For i = 0 to 100 {
+  if i % 3 = 0 {
+    print i
+  }
+}

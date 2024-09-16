@@ -1,0 +1,13 @@
+// Sorting yellow and blue boxes, blue first
+// Assuming the boxes reside in array
+
+// pointer 1
+for i = 0 to line.length
+  // pointer 2
+  for j = 0 to line.length
+    if j > i and line[i] == yellow and line[j] == blue
+      // yellow is first, switch places
+      temp = line[i]
+      line[i] = line[j]
+      line[j] = temp
+    

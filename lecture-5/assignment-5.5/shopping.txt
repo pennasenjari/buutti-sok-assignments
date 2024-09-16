@@ -1,0 +1,24 @@
+a) Walk around the area
+
+Repeat(4)
+  Repeat(7)
+    Step()
+  TurnL(90)
+
+b) Go shopping
+
+// Go to shop
+Repeat(7)
+  Step()
+TurnL(90)
+Repeat(6)
+  Step()
+/* Machine is at the door. Now do the shopping by some means.
+   Machine can only walk the red lines so it cannot go inside the shop. */
+// After shopping go back home
+TurnL(180)
+Repeat(6)
+  Step()
+TurnR(90)
+Repeat(7)
+  Step()
