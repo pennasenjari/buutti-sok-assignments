@@ -1,0 +1,55 @@
+// Helper function
+function WalkMany(steps)
+  For (i = 1 to steps)
+    Walk 
+
+// Helper function
+function TurnBack()
+  Turn(right)
+  Turn(right)
+
+// Main program
+Open // Go in
+WalkMany(3)
+Turn(right)
+Swim
+WalkMany(3)
+Turn(right)
+Walk
+Take // Treasure 1
+TurnBack
+Walk
+Turn(left)
+WalkMany(2)
+Turn(right)
+Open
+WalkMany(2)
+Turn(left)
+Repeat(2)
+  WalkMany(2)
+  Turn(right)
+WalkMany(2)
+Take // Treasure 2
+TurnBack
+Repeat(2)
+  WalkMany(2)
+  Turn(left)
+WalkMany(5)
+Swim
+WalkMany(2)
+Turn(left)
+WalkMany(3)
+Take // Treasure 3
+TurnBack
+WalkMany(3)
+Turn(left)
+Walk
+Turn(right)
+WalkMany(2)
+Swim
+Walk
+Turn(left)
+Walk
+Turn(right)
+Open
+WalkMany(2) // Go out
