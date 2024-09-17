@@ -1,0 +1,36 @@
+div {
+  display: flex;
+}
+
+.greenRow {
+  justify-content: space-around;
+}
+
+.green {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background-color: #adff2f;
+  align-items: center;
+  justify-content: center;
+}
+
+.redRow {
+  /* defined for consistency */
+}
+
+.red {
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+.red1 {
+  flex-grow: 1;
+  aspect-ratio: 3 / 1;
+}
+
+.red2 {
+  flex-grow: 2;
+  aspect-ratio: 3 / 1;
+}
