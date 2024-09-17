@@ -1,0 +1,48 @@
+// Sorting deck of cards
+// Note: referring to first item of array as 1 here
+
+// suits = ["club", "diamond", "heart", "spade"]
+// Figured out this kind of array structure.
+// deck = 4 suits, 13 cards in each = 52 cards
+// In reality, the cards would be in random order.
+deck = [[suit=>"club", number=>1],[suit=>"club", number=>2]... [suit=>"spade", number=>13]]
+temp = []
+
+1) sort by number
+
+// pointer 1
+for i = 1 to deck.length
+  // pointer 2
+  for j = 1 to deck.length
+    if j > i and deck[i]["number"] > deck[j]["number"]
+      // first number is bigger -> switch places
+      temp = deck[i]
+      deck[i] = deck[j]
+      deck[j] = temp
+    
+
+2) sort by suit and number
+
+// First sort by suit using the idea in assignment 1
+
+// pointer 1
+for i = 1 to deck.length
+  // pointer 2
+  for j = 1 to deck.length
+    if j > i and deck[i]["suit"] > deck[j]["suit"]
+      // first suit name is alphabetically "bigger" -> switch places
+      // TODO: this does not allow to select the order of suits
+      temp = deck[i]
+      deck[i] = deck[j]
+      deck[j] = temp
+
+// Now cards should be ordered by suit but numbers inside them are in random order.
+// Sort by the numbers.
+
+for i = 1 to deck.length // pointer 1
+  for j = 1 to deck.length // pointer 2
+    // if the cards are same suit, set them in ascending order
+    if deck[i]["suit"] == deck[j]["suit"] and deck[i]["suit"] > deck[j]["suit"] 
+      temp = deck[i]
+      deck[i] = deck[j]
+      deck[j] = temp
