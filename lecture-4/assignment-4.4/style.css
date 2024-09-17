@@ -1,5 +1,5 @@
 li:nth-child(odd) {
-  background-color: green;
+  color: purple;
 }
 
 ul {
@@ -20,5 +20,5 @@ ul li::before {
   top: 0;
   height: 100%;
   width: 3px;
-  background-color: black; /* Color of the vertical bar */
+  background-color: green; /* Color of the vertical bar */
 }
