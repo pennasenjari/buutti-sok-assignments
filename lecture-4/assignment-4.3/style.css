@@ -3,31 +3,28 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  border: 1px solid;
 }
 
-div.kuvat {
-  width: 100%;
-  height: 100%;
-}
-
-div.kuva {
+.kuva {
   display: inline-block;
   width: 30%;
+  margin: 0;
+  padding: 0.5%;
+  border-radius: 2%;
+}
+
+.kuva1 {
+  border: 0.5vw solid green;
+}
+
+.kuva2 {
+  border: 0.5vw solid red;
+}
+
+.kuva3 {
+  border: 0.5vw solid blue;
 }
 
 img {
-  width: 96%;
-}
-
-#kuva1 {
-  border: 5px solid green;
-}
-
-#kuva2 {
-  border: 5px solid red;
-}
-
-#kuva3 {
-  border: 5px solid blue;
+  width: 100%;
 }
