@@ -1,0 +1,78 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 10vh);
+  grid-template-areas:
+  "red1 red2 red3"
+  "red4 red5 ."
+  "green1 green1 green1"
+  "green2 green3 green4"
+  "green2 green5 ."
+  "green2 . .";
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  font-size: 14pt;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.red1 {
+  grid-area: red1;
+}
+
+.red2 {
+  grid-area: red2;
+}
+
+.red3 {
+  grid-area: red3;
+}
+
+.red4 {
+  grid-area: red4;
+}
+
+.red5 {
+  grid-area: red5;
+}
+
+.green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  font-size: 14pt;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.green1 { 
+  grid-area: green1;
+}
+
+.green2 { 
+  grid-area: green2;
+}
+
+.green3 { 
+  grid-area: green3;
+}
+.green4 { 
+  grid-area: green4;
+}
+
+.green5 { 
+  grid-area: green5;
+}
