@@ -1,0 +1,155 @@
+<!--
+Tested with ChatGPT. My instructions to it:
+---
+I need to draw 6 dices with pure html and css. 
+The dices are in a horizontal row 60% of page width, having small gap between them. 
+The individual dice's layout is a common dice layout, with white background and black dots.
+in first dice the dot is horizontally and vertically centered.
+in second dice the dots are vertically on top of each other, horizontally centered.
+In 3rd dice the area is divided into three cols and three rows; 
+1st dot is in1st row's 3rd column, 
+2nd dot is in second row's 2nd column and 
+3rd dot is in 3rd row's first column. 
+In 4th dice the area is divided into 4 equal squares and each dot is centered in those.
+In 5th dice the area is divided into 9 squares,
+dots locating in 1st row's 1st and 3rd spot,
+2nd row's 2nd spot and 3rd row's first and third spot.
+In 6th dice the area is divided into 6 and each slot has a dot.
+---
+This is what ChatGPT produced. Pretty much working layout out of the box,
+just missing some empty space.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .dice-container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+        .dice {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: grid;
+            gap: 10px;
+        }
+        .dot {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            justify-self: center;
+            align-self: center;
+        }
+        .dice-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dice-2 {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .dice-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .dice-4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .dice-5 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .dice-6 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="dice-container">
+        <!-- Dice 1 -->
+        <div class="dice dice-1">
+            <span class="dot"></span>
+        </div>
+        
+        <!-- Dice 2 -->
+        <div class="dice dice-2">
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        
+        <!-- Dice 3 -->
+        <div class="dice dice-3">
+            <span class="hidden"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="hidden"></span>
+        </div>
+        
+        <!-- Dice 4 -->
+        <div class="dice dice-4">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        
+        <!-- Dice 5 -->
+        <div class="dice dice-5">
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+            <span class="hidden"></span>
+            <span class="dot"></span>
+        </div>
+        
+        <!-- Dice 6 -->
+        <div class="dice dice-6">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</body>
+</html>

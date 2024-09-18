@@ -1,0 +1,64 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1;
+  column-gap: 1vw;
+  padding-top: 5vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.dice {
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10%;
+  justify-self: center;
+}
+
+.dot {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  background-color: black;
+}
+
+.dice1 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
+.dice2 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+}
+
+.dice3, .dice5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.dice4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.dice6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
