@@ -17,11 +17,18 @@ const comp2Power = 480;
 let comp1Total = comp1Time * comp1Power;
 let comp2Total = comp2Time * comp2Power;
 
-console.log(`Computer 1 used ${comp1Total} units of energy.`);
-console.log(`Computer 2 used ${comp2Total} units of energy.`);
-comp1Total < comp2Total ? console.log(`Computer 1 used less.`)
-: console.log(`Computer 2 used less. `);
+console.log(`Computer 1 used ${comp1Total} units of power.`);
+console.log(`Computer 2 used ${comp2Total} units of power.\n`);
+
+if (comp1Total === comp2Total) {
+  console.log(`The computers used equal amount of power.`)
+} else if (comp1Total < comp2Total) {
+  console.log(`Computer 1 used less.`)
+} else {
+  console.log(`Computer 2 used less. `);
+}
 
 // Extra
 console.log(`\nExtra:`)
-console.log(comp1Total < comp2Total ? `Computer 1 used less.` : `Computer 2 used less.`);
+console.log(comp1Total === comp2Total ? 'The computers used equal amount of power.'
+: comp1Total < comp2Total ? `Computer 1 used less.` : `Computer 2 used less.`);
