@@ -1,0 +1,8 @@
+Create three text files in your workspace
+Fill each file with some text. You can copy text from a random web page, such as Wikipedia.
+Create a folder inside your workspace
+Move two of the files to the folder
+Add a picture (either jpg or png) to your workspace (you can get any picture
+from the internet) and see what happens when you open the picture file in VSC
+---
+Done

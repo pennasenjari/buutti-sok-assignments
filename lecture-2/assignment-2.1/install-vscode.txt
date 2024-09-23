@@ -1,0 +1,7 @@
+Install Visual Studio Code to your laptop.
+
+Open your assignments folder in VSCode and create a new subfolder lecture-2
+
+At this point you should have a folder structure that looks like this
+---
+Done

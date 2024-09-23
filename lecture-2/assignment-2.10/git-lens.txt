@@ -1,0 +1,10 @@
+Install the GitLens extension to VS Code.
+
+Watch the tutorial video (link available from the extension after installation).
+
+Create a git project, add some files, do commits, and use GitLens to keep track
+  of what is happening in the repository.
+
+Extra: Create some branches to your Git repo.
+---
+Done

@@ -1,0 +1,5 @@
+Make some changes to a file in your repository
+Then, create a .gitignore file and add your previously edited file to .gitignore
+Push changes
+---
+Done

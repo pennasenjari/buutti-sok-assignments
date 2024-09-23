@@ -1,0 +1,10 @@
+Work on this exercise with your group.
+Choose someone's test repository from Assignment 2.5 to use in this exercise.
+While others clone the repo to their machine, the owner should add other group members
+  as collaborators of the repo in the repository's settings on GitLab. 
+  (Project information > Members)
+Everyone adds a new file and pushes it to the repository
+Everyone makes changes to previous files
+What happens if two people make changes to the same line simultaneously?
+---
+Done

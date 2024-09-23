@@ -1,0 +1,10 @@
+Initialize a new local repository.
+Create a new remote repository on GitLab. Initialize a README.md file while 
+  creating the repository.
+Using the instructions in the README.md file, connect your local repository
+  to the remote repository.
+Then, create a new file GitTest.md with some lines of text in it.
+Commit and push changes to GitLab.
+Go to GitLab and see that the file is there!
+---
+Done

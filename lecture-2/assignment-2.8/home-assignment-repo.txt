@@ -1,0 +1,12 @@
+Create a private repository in GitLab for your future assignments.
+Add teachers to the repository as Maintainer members.
+
+Name it assignments-lastname-firstname for example: assignments-virtanen-jukka
+
+Clone the repo to your computer, and move your earlier lecture-1 folder
+  to this repository. Do not move git assignments here since moving git
+  repositories and having them inside one another will cause problems!
+
+Push the changes to GitLab and see if you can see your lecture-1 folder in GitLab.
+---
+Done

@@ -1,0 +1,9 @@
+Open a terminal in VSC in your workspace
+Use the terminal to
+list the contents of your workspace
+create another folder in your workspace
+move one file from the previously created folder to the new folder
+remove the previously created folder and all its remaining contents
+Close the terminal
+---
+Done

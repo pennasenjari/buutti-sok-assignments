@@ -1,0 +1,6 @@
+Create a new repository on GitLab and clone it with HTTPS to your machine.
+Then, create a new file GitTest.md with some lines of text in it.
+Commit and push changes to GitLab.
+Go to GitLab and see that the file is there!
+---
+Done
