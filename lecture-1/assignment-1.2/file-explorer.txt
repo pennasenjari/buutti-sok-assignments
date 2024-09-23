@@ -1,0 +1,10 @@
+Let’s practice creating some directories and files.
+
+Create a new directory named lecture-1 under the C: drive.
+Create a sub-directory named assignment-1.2
+Inside that directory, create a new text document named hello.txt
+Inside that directory, create a sub-directory and name it images
+Find some nice image on the Internet and save it to the images directory
+Copy hello.txt to the images directory
+---
+Done

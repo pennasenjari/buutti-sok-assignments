@@ -1,0 +1,5 @@
+Take a screenshot of something in your screen.
+Do not take a screenshot of the whole screen.
+Send the screenshot to the #general channel in Discord.
+---
+Done 

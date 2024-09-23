@@ -6,6 +6,7 @@ Open the Task Manager and use it to shut down Notepad. For the purposes of this 
 While at it, you can take a quick look at the Task Manager's process list for a quick look of all the stuff that is normally running on your computer.
 
 ---
+Done
 
 Equivalent in Linux Mint: 
 

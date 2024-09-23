@@ -1,0 +1,6 @@
+Go to Buutti Education's website at https://buuttiedu.com/kotisivu/
+Right-click on the logo at the top left of the page
+Click on Save image as
+Navigate to this assignment's subfolder and save the image there as buuttiedu.png
+---
+Done

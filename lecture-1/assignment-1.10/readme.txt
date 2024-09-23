@@ -1,5 +1,0 @@
-Extra Assignment 1.10: Extra
-Make sure that you know how to use Windows, the file system, and the command line. You'll really need them in the future and during this course. If there's anything you're unsure of and can't figure out by yourself, ask the instructor(s).
-
---
-No problem :-)

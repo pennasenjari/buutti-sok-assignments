@@ -1,0 +1,15 @@
+Using the command line (PowerShell on Windows, your preferred choice on Linux/macOS),
+do the following:
+
+In your previously created lecture-1 folder, create a new subfolder assignment-1.4
+Go to that folder
+Print the contents of the directory (iow. list files in the directory)
+Inside the folder, create a new file named test.txt
+List the files of the directory again
+Delete the test.txt file
+Step outside of the directory
+Delete the directory
+Extra: Create a directory with files and figure out how to delete the directory 
+while it still has files inside of it
+---
+Done

@@ -1,0 +1,18 @@
+Using the command line (PowerShell) or File Explorer:
+
+Create a folder for all your home assignments on the course.
+You can freely choose where to create it, but the Documents folder
+of your user profile could be a good choice.
+
+Move your previously made lecture-1 folder into this new assignment folder.
+
+You will use this folder until we get familiarized with git.
+Create new subfloder for each assignment ie. lecture-1/assignment-1.6,
+lecture-1/assignment-1.7 etc.
+
+At this point you should have a folder structure that looks something like this:
+
+folders.png
+
+---
+Done
