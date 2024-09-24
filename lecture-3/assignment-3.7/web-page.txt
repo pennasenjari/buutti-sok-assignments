@@ -1,0 +1,14 @@
+See the attached MarkDown file that contains an excerpt of an article.
+The original article is from futurumcareers.com. 
+Create a html page that matches the contents of the MarkDown file. You need to use
+
+three levels of headers
+paragraphs
+images
+links
+bold (<b>) and italic (<i>) formatting
+You do not need any CSS styling for this assignment.
+
+Hint: You can read more about formatting tags from W3Schools.
+---
+Done

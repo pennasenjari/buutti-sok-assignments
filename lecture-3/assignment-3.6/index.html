@@ -39,6 +39,13 @@
         width: 200px;
       }
   </style>
+  <script>
+    function resetInput() {
+      document.getElementById('etunimi').value = '';
+      document.getElementById('sukunimi').value = '';
+      document.getElementById('kuvaus').value = '';
+    }
+  </script>
 </head>
 <body>
   <label for="etunimi">Etunimi</label>
@@ -58,12 +65,5 @@
   <br>
   <button onclick="resetInput()">Tyhjennä kentät</button>
   <button>Lähetä</button>
-  <script>
-    function resetInput() {
-        document.getElementById('etunimi').value = '';
-        document.getElementById('sukunimi').value = '';
-        document.getElementById('kuvaus').value = '';
-    }
-</script>
 </body>
 </html>

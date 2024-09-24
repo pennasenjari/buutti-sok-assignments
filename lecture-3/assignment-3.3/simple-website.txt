@@ -1,0 +1,10 @@
+Make a simple HTML website using the VCS boilerplate as your starting point.
+
+Create a page that contains
+
+Headings of different sizes
+Paragraphs with some line breaks
+Images: one local and one external image Also give your page a title.
+Extra: Use some Lorem Ipsum
+---
+Done

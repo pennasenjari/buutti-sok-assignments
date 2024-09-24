@@ -1,0 +1,14 @@
+Create a new index.html file, and fill it with the boilerplate code generated
+  by Visual Studio Code.
+
+Add the text "Hello HTML!" inside the body tags. Save the file and open it 
+  in your browser.
+
+Change the title of the page to "Basic HTML". Save the file and reload 
+  your browser page. Where do you see the change?
+
+Extra: What can you remove from the page so that your browser still renders the page
+  as you want? Note that what you end up might not be (and probably isn't) 
+  valid HTML anymore, but modern browsers can still handle it.
+---
+Done

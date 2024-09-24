@@ -1,0 +1,6 @@
+Create a table with a header and numbered entries.
+
+The visual style doesn’t need to match the below example, 
+  but make it structurally similar.
+---
+Done

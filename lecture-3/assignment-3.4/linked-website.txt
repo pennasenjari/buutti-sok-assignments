@@ -1,0 +1,11 @@
+Make a website consisting of two HTML pages. Create links on both pages 
+  so that the user can navigate between the pages. Also add a link to an external web page.
+
+On one of the pages, use some <span> elements with attribute style="color: red;"
+  to make some words appear red. On the other page, use some <div> elements with
+  attribute style="background-color: yellow;" to make some areas appear yellow.
+
+We'll look at the details of the styles in the next lecture. Now you can just copy
+  and paste the attributes.
+---
+Done

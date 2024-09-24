@@ -1,0 +1,4 @@
+Go to some random news page and change a headline into something silly 
+with the Dev tools. (It’s surprisingly easy!)
+---
+Done

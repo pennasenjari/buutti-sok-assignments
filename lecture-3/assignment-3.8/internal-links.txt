@@ -1,0 +1,15 @@
+Create a new web page with a h1 header "Lorem ipsum dolor sit amet".
+Add fifty paragraphs (yes, fifty) of Lorem Ipsum to the page.
+Every ten paragraphs add a h2 subheading. Give each subheading a unique id attribute.
+To the top of the page, add five links, one to each subheading.
+Under each subheading, add one link to the subheading above it and one
+  to the subheading below it.
+When done, the user should be able to move between the subheadings by clicking the links.
+
+Hint: You can copy the HTML code from another page (such as from the lorem ipsum
+  generator page) by using the developer tools "elements" tab.
+
+Extra: Add a link to the top of the page under each subheading.
+Add one to the bottom of the page as well.
+---
+Done

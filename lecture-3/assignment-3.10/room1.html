@@ -4,16 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Labyrinth</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Labyrinth</h1>
-  <h1>Room 1</h1>
-  <p>
-  This room has two doors, one on the east wall, and another on the south wall.
-  The entrance to the labyrinth is on the west wall.
-  </p>
-  <a href="room2.html">East wall</a><br>
-  <a href="room4.html">South wall</a><br>
-  <a href="index.html">West wall</a>
+  <div class="container">
+    <h1>Labyrinth</h1>
+    <h1>Room 1</h1>
+    <div class="labyrinth">
+      <div>
+        <!-- Northwest -->
+      </div>
+      <div class="north">
+      </div>
+      <div>
+        <!-- Northeast -->
+      </div>
+      <div class="west disabled">
+        <a><!-- disabled link --></a>
+      </div>
+      <div>
+        <!-- Center -->
+      </div>
+      <div class="east">
+        <a href="room2.html"></a>
+      </div>
+      <div>
+        <!-- Southwest -->
+      </div>
+      <div class="south">
+        <a href="room4.html"></a>
+      </div>
+      <div>
+        <!-- Southeast -->
+      </div>
+    </div>
+    <p>
+      This room has two doors, one on the east wall, and another on the south wall.
+      The one-way entrance to the labyrinth is on the west wall.
+      You need to navigate through the labyrinth to get out!
+    </p>
+  </div>
 </body>
 </html>

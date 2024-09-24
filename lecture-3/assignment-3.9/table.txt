@@ -1,0 +1,20 @@
+Create a HTML page with the following table data from Tilastokeskus
+
+Hotellien vuosittainen kapasiteetti ja yöpymiset kunnittain muuttujina Kunta, 
+Vuosi ja Tiedot, 2024
+
+          Huoneet, lkm  Huoneen keskihinta  Yöpymisen keskihinta  Yöpymiset, lkm  Kotimaiset yöpymiset, lkm  Ulkomaiset yöpymiset
+Espoo     1 891	        90,87               64,71                 51 905          37 147                     14 758
+Helsinki  12 478        117,17              76,20                 521 616         294 561                    227 055
+Jyväskylä 1 381	        114,25              73,67                 73 890          66 224                     7 666
+Lahti     939           104,71              65,11                 37 049          31 250                     5 799
+Oulu      1 378         121,11              81,17                 79 724          69 055                     10 669
+Rovaniemi 1 821         265,81              130,45                203 163         31 407                     71 756
+Tampere   3 653         117,70              75,28                 175 960         158 042                    17 918
+Vantaa    2 699         118,20              78,31                 140 780         93 975                     46 805
+
+Note that there are two kinds of headers on the table.
+There are the horizontal and the vertical headers. Use <th> elements for both!
+
+---
+Done

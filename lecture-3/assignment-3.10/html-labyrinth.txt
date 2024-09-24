@@ -1,0 +1,20 @@
+Create a HTML labyrinth. The labyrinth should follow the attached layout. 
+  The labyrinth consists of eleven html pages. The first page (index.html) contains
+  a link to the first room. Inside the labyrinth there are nine rooms (room1.html,
+  room2.html, etc.), with varying amount of doors (shown as square symbols on walls)
+  in each of them. Each page should have an explanation of where the doors are, 
+  and a link for each door. Clicking the link takes the user to the corresponding room. 
+  One of the rooms has a link to the exit page, which does not contain links back to 
+  any rooms.
+
+For example, when the user enters the labyrinth, the first room should show information
+  like "This room has two doors, one on the east wall, and another on the south wall. 
+  The entrance to the labyrinth is on the west wall." Since there are only two doors 
+  to choose from, there are two links, each leading to the corresponding room page.
+
+Extra: The default link colouring shows where we have already been. That's boring. 
+  Use CSS to make the visited links look identical to unvisited links so the user 
+  won't know where they have already been.
+---
+Done. 
+Added CSS layout 24.9.

@@ -1,0 +1,86 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+}
+
+.labyrinth {
+  margin: auto;
+  display: grid;
+  width: 30vW;
+  height: 30vw;
+  grid-template-columns: repeat(3, minmax(min(10vw, 10vw), 1fr));
+  grid-template-rows: repeat(3, minmax(min(10vw, 10vw), 1fr));
+  outline: #000 solid 1pt;
+}
+
+.wayIn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.north {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.east {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.south {
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+
+.west {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+a {
+  display: block;
+  width: 0; 
+  height: 0;
+}
+
+.north a {
+  border-left: 30pt solid transparent;
+  border-right: 30pt solid transparent;
+  border-bottom: 30pt solid green;
+}
+
+.south a {
+  border-left: 30pt solid transparent;
+  border-right: 30pt solid transparent;
+  border-top: 30pt solid green;
+}
+
+.east a, .wayIn a {
+  border-top: 30pt solid transparent;
+  border-bottom: 30pt solid transparent;
+  border-left: 30pt solid green;
+}
+
+.west a {
+  border-top: 30pt solid transparent;
+  border-bottom: 30pt solid transparent;
+  border-right: 30pt solid green;
+}
+
+.west.disabled a {
+  border-top: 30pt solid transparent;
+  border-bottom: 30pt solid transparent;
+  border-right: 30pt solid gray;
+}
