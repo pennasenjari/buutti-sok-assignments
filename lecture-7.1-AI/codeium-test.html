@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+/**
+ * Draws a box in the center of the screen
+ * @param {number} boxSize - The size of the box
+ * @param {string} color - The color of the box
+ */
+function drawCenteredBox(boxSize, color) {
+  // Create a new canvas element and set its width and height
+  const canvas = document.createElement("canvas");
+  canvas.width = boxSize;
+  canvas.height = boxSize;
+  
+  // Get a 2D drawing context
+  const ctx = canvas.getContext("2d");
+  
+  // Set the fill color
+  ctx.fillStyle = color;
+  
+  // Fill the entire canvas with the fill color
+  ctx.fillRect(0, 0, boxSize, boxSize);
+  
+  // Add the canvas to the dom
+  document.body.appendChild(canvas);
+  
+  // Set the position of the canvas
+  canvas.style.position = "absolute";
+  canvas.style.top = "50%";
+  canvas.style.left = "50%";
+  
+  // Move the canvas to the center of the screen
+  canvas.style.transform = "translate(-50%, -50%)";
+}
+function drawBlueBox() {
+  drawCenteredBox(200, "blue");
+}
+drawBlueBox();
+</script>
+</body>
+</html>
