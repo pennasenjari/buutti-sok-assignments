@@ -1,0 +1,12 @@
+/* Create a container <div> and inside it five <div> elements. 
+Make the container 1000px wide and 100px high. 
+Make the inner <div> elements 50px wide, 50px high, and give each a unique color. 
+Set the display type of the container to be flex.
+
+Change the justify-content property of the container. Try at least flex-start, 
+  center, space-around.
+Change the align-items property of the container: Try at least flex-start, 
+  center, flex-end.
+Change the flex-direction of the container to column. Change justify-content 
+  and align-items again. What do you notice?
+Extra: Try other values you can find from the documentation. */

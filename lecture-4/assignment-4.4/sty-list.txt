@@ -1,0 +1,10 @@
+/* Create a new unordered list (<ul>) element with at least 5 list item (<li>) 
+  elements to your page.
+
+Add a CSS style that changes the text color of every odd-number-indexed list element
+  to purple.
+
+Tip: nth-child allows specifying odd instead of even for styling odd-indexed children
+
+Extra: Remove the bullets from the list, and replace them with a 3px thick 
+  vertical bar. */

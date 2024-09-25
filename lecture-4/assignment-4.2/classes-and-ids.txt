@@ -1,0 +1,8 @@
+/* Create a new index.html file with five paragraphs with some random text in them. 
+Create an external style.css file and link it to the page.
+
+Give the second and the fourth paragraph the class "green".
+Give the third paragraph id "blue".
+Change the background color of the paragraphs so that the ones without any class
+  or id have red background, the ones with class green have green background, 
+  and the one with the id blue has a blue background. */

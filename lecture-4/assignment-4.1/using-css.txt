@@ -1,0 +1,5 @@
+Create a new index.html file with a heading and a paragraph with some random text in it.
+
+Use an external CSS file to change the background color of the whole page red
+Use internal CSS element to change the background color of the heading to green
+Use inline CSS to change the background color of the paragraph to blue.

@@ -1,0 +1,19 @@
+/* Take a look at the attached MarkDown file about a news article. 
+You can check the original article from yle.fi.
+
+Create a web page that has the same content as the markdown file has. 
+The page should have
+
+One h1 heading
+Multiple h2 headings
+Three images placed as in the attached file
+All the names of the people mentioned bolded (like in the article)
+One working link
+The name of the author in italic
+The ingress (the first paragraph of the article) as both bold and italic
+In addition, the page should be in a single 600px wide column that is 
+  centered to the middle of the screen. 
+The images should be all 450 pixels wide. 
+The font size of the text outside image captions should be 18pt.
+
+Extra: Get to know and use <figure> and <figcaption> tags with the images. */

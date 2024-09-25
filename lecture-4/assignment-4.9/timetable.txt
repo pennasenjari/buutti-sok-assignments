@@ -1,0 +1,3 @@
+/* Create the following table using HTML and CSS.
+
+Hint: You will need properties colspan and rowspan. */

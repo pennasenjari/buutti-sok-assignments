@@ -1,0 +1,14 @@
+/* We will frame some paintings in a decorative manner.
+Create a web page with three equally high images on it. 
+Place each image inside a <div> element.
+
+Set the style of each <div> so that
+
+It has display: inline-block;
+has some margin and padding
+has a border
+has a background color
+Make each frame unique. Play around with border-style, border-color,
+  and border-radius values to make nice looking frames for the images.
+
+Extra: Use named colors, RGB colors, and hex colors to define your colors.*/
