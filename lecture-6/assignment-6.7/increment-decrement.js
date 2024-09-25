@@ -6,10 +6,20 @@ c. Use decrement operator to decrease the number in variable i and print the res
 Try out both the postfix and the prefix operators! */
 
 let i = 7;
-console.log(i);
-let j = i++; // postfix
-console.log(j);
+let x = 0;
+console.log(`Original i: ${i}`);
+
+x = ++i; // prefix
+console.log(`++i: ${x}`);
 
 i = 7;
-let k = ++i; // prefix
-console.log(k);
+x = i++; // postfix
+console.log(`i++: ${x}`);
+
+i = 7;
+x = --i; // prefix
+console.log(`--i: ${x}`);
+
+i = 7;
+x = i--; // postfix
+console.log(`i--: ${x}`);

@@ -22,4 +22,4 @@ const gradeCount = 3;
 // Added missing parentheses
 const averageGrade = (grade1 + grade2 + grade3) / gradeCount;
 
-console.log(averageGrade);
+console.log(`Average grade: ${averageGrade.toFixed(2)}`);

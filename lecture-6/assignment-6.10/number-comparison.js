@@ -14,5 +14,5 @@ if (typeof(a) === "number" && typeof(b) === "number") {
     if (a === b) console.log("a and b are equal");
   }
 } else {
-  console.log("Either a or b is not a number");
+  console.log("Either a or b is not a number!");
 }

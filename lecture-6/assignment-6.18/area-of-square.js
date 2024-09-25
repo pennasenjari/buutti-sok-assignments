@@ -7,6 +7,6 @@ const sideLen = 5; // m
 let area = sideLen * sideLen;
 console.log(`Square's side is ${sideLen} m and area is ${area} m2.` );
 
-// extra
+// Extra
 area = sideLen ** 2;
 console.log(`The area calculated with exponentiation is also ${area} m2.` );

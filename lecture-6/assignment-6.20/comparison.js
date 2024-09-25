@@ -16,5 +16,5 @@ const person1Age = 15;
 const person2Age = 24;
 
 const isFirstPersonOlder = person1Age > person2Age;
-console.log(isFirstPersonOlder);
+console.log(isFirstPersonOlder); // false
 console.log(typeof(isFirstPersonOlder)); // boolean

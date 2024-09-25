@@ -13,5 +13,4 @@ const bananaCount = 5;
 console.log("Apples: " + appleCount);
 console.log("Bananas: " + bananaCount);
 // Use parentheses to coerse the types right
-// Without parentheses 135, with them 18
 console.log("Fruits in total: " + (appleCount + bananaCount));

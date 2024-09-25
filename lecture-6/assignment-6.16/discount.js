@@ -23,4 +23,4 @@ console.log("Discount: " + discount);
 console.log("New price: " + result.toFixed(2) + " €");
 
 console.log(`\nIn other words, the original price was ${price} €,
-discount was ${discount}, meaning ${100 * discount}% and the new price is ${result.toFixed(2)} €.`)
+discount multiplier was ${discount}, in other words ${100 * discount}% and the new price is ${result.toFixed(2)} €.`)

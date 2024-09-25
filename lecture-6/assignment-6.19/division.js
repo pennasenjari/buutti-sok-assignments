@@ -12,7 +12,7 @@ Also, reduce this candy from the total count before doing the original division.
 const candyBagSize = 100;
 const people = 5 + 1; // Others + me
 let share = candyBagSize / people;
-console.log(`When shared evenly, each person gets ${share.toFixed(1)} candy.`);
+console.log(`When shared evenly, each person gets ${share.toFixed(1)} candy.\n`);
 
 // Extra
 const extraCandy = candyBagSize % people;

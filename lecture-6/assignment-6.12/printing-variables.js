@@ -8,6 +8,6 @@ For example, console.log("Hello " + name). */
 const name = "Donald";
 const age = 99;
 
-console.log(name); // name is deprecated? (ts6385)
+console.log(name); // VS Code says that "name is deprecated" (ts6385)
 console.log(age);
 console.log(name + " is " + age + " years old.");

@@ -18,7 +18,5 @@ const jakojaannos2 = b % a;
 console.log(summa);
 console.log(erotus);
 console.log(tuotos);
-console.log(jakojaannos1); 
+console.log(jakojaannos1); // modulus depends on the order of numbers
 console.log(jakojaannos2);  
-
-// modulus depends on the order of numbers
