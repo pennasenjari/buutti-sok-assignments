@@ -1,3 +1,19 @@
+/* Imagine that you have a deck of cards. If you have a deck of cards, get one.
+Each card is numbered from 1 to 13, and for each number there are 4 cards 
+  with that number. Design an algorithm for sorting the deck of cards so that 
+  the numbers go from lowest to highest.
+
+EXTRA: Also take the suits (clubs, diamonds, hearts, spades) into account when sorting.
+
+Reminder: It is best to do first the basic versions of all the assignments
+  before starting the extras. The recommended flow is
+
+The basic versions of all the Homework Assignments
+The extras of the Homework Assignments
+The Extra Assignments */
+
+---
+
 // Sorting deck of cards
 // Note: referring to first item of array as 1 here
 
@@ -31,7 +47,7 @@ for i = 1 to deck.length
   for j = 1 to deck.length
     if j > i and deck[i]["suit"] > deck[j]["suit"]
       // first suit name is alphabetically "bigger" -> switch places
-      // TODO: this does not allow to select the order of suits
+      // TODO: allow selecting the order of suits
       temp = deck[i]
       deck[i] = deck[j]
       deck[j] = temp

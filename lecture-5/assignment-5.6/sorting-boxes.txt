@@ -1,0 +1,26 @@
+/* You have a bunch of small boxes in a line. The boxes are otherwise identical,
+  but some of them are blue and others are yellow. 
+Currently they are not organized in any way; the blue and yellow boxes are mixed
+  together in a messy manner.
+The image below is for demonstration, but there could be more boxes in the line.
+Design an algorithm for sorting the boxes so that the blue ones come first
+  in the line and the yellow ones come after the blue ones. 
+The algorithm can do only one comparison at a time. 
+You can't say for example "take largest of the three numbers", 
+  since that would compare three numbers at the same time. */
+
+---
+
+// Sorting yellow and blue boxes, blue first
+// Assuming the boxes reside in array
+
+// pointer 1
+for i = 0 to line.length
+  // pointer 2
+  for j = 0 to line.length
+    if j > i and line[i] == yellow and line[j] == blue
+      // yellow is first, switch places
+      temp = line[i]
+      line[i] = line[j]
+      line[j] = temp
+    

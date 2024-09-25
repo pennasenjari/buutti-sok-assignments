@@ -1,3 +1,44 @@
+/* Get a piece of grid paper and outline a 10x10 square area. 
+Inside the square area draw a dungeon game map that consists of wall squares
+  and empty squares. The map should have an entrance and an exit, 
+  with a clear path from the entrance to exit. 
+Inside the map, place three kinds of elements:
+
+Door
+Water
+Treasure
+You can use any symbols for these, just mark them clearly.
+Each element occupies one square. Use three of each element in your dungeon 
+  (three doors, three treasures etc.).
+
+When your map is ready, write a program that instructs an adventurer to travel 
+  through the dungeon, collecting all the treasure. The commands you can use are:
+
+Walk: Move forward one square
+Jump: Move forward ond square jumping
+Swim: Move forward one square swimming
+Open: Open a door in front of you
+Take: Pick up a treasure that is in the same square
+Turn(x): Turn to specified direction, where x is either left or right
+Repeat(n) {...}: Repeat the command set in the curly braces n times
+
+When the adventurer enters a square with a trap, they must enter it using jump command.
+Likewise, when entering a water square, they must enter using a swim command.
+To open a door they must walk to the square adjacent to the door, face the door, 
+  and use the Open command. 
+To collect treasure they need to be in the same square as the treasure 
+  while using the Take command.
+
+For example, to travel through this 5x5 example dungeon, 
+  a possible program could be 
+Walk - Repeat(2) { Swim } - Walk - Turn(right) - Walk - Take - Turn(right) -
+  Walk - Turn(left) - Walk - Turn(right) - Walk - Turn(left) - Open - Walk - Walk
+
+Keep the paper that you drew the dungeon on. 
+We will use it later on the lecture to solve each other's dungeons. */
+
+---
+
 // Helper function
 function WalkMany(steps)
   For (i = 1 to steps)

@@ -1,3 +1,15 @@
+/* Use VSCode to write pseudo-code descriptions for the following programs:
+
+A program that prints “Hello World!” to the screen
+A program that has two numbers, a and b, with respective values of 3 and 5. 
+The program calculates the results of summing, subtracting, multiplying 
+  and dividing of these numbers and prints the result. Division is usually marked with /
+
+EXTRA: Write pseudocode for a program that prints out all numbers 
+  between 0 and 100 that are divisible by 3.
+
+Once you’re done, compare your solutions in your group. */
+
 Program 1
 ---
 print "Hello World!"

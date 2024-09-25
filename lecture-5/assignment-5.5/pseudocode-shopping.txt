@@ -1,0 +1,47 @@
+/* You are too busy learning algorithms to take a walk outside, 
+so you decide to create a machine that takes the walk for you. 
+The machine can only move on valid roads (red lines).
+You can use the following instructions to program the machine:
+
+Step() - move 1 cell forward, to the direction that the machine is facing
+TurnL(degrees) - turns the machine towards the left by the given number of degrees
+TurnR(degrees) - turns the machine towards the right by the given number of degrees
+Repeat(x) { ... } - repeats the instructions within the block x many times
+
+Write your answer in pseudocode using this syntax. 
+The machine starts its journey from the Home location and faces north.
+
+a) You want the machine to go for a nice refreshing walk so you can focus on programming.
+Write a code that instructs the machine to walk through the outer rectangle
+  (largest rectangle), ending up back home once done.
+  
+b) You want the machine to do shopping for you so you can keep focusing on learning.
+Write a code that instructs the machine to go to the shop and return back home; 
+  note that the shop has two doors (blue stars). */
+
+---
+
+a) Walk around the area
+
+Repeat(4)
+  Repeat(7)
+    Step()
+  TurnL(90)
+
+b) Go shopping
+
+// Go to shop
+Repeat(7)
+  Step()
+TurnL(90)
+Repeat(6)
+  Step()
+/* Machine is at the door. Now do the shopping by some means.
+   Machine can only walk the red lines so it cannot go inside the shop. */
+// After shopping go back home
+TurnL(180)
+Repeat(6)
+  Step()
+TurnR(90)
+Repeat(7)
+  Step()
