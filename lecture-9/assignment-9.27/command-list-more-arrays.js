@@ -54,9 +54,9 @@ for (i = 0; i < commandArr.length; i++) {
 
 // Apply commands
 for (i = 0; i < commandArr.length; i++) {
-  const ret = functions[commandArr[i]]();
+  const ret = functions[commandArr[i]](); // true or false
   if (ret === false) {
-    // command = B (5)
+    // command = B = exit
     break;
   }
 }
