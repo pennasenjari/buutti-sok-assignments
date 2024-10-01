@@ -25,22 +25,15 @@ const users = [
   { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}
 ];
 
-console.log("\nLast names of employees:")
+console.log("\nLast names of employees:");
+const lastNames = users.map(user => user.lastName);
+console.log(lastNames.toString());
 
-users.map(user => console.log(user.lastName));
+console.log("\nEmployees that are Full Stack Residents:");
+const fullStacResidents = users.filter(user => user.role === 'Full Stack Resident');
+console.log(fullStacResidents);
 
-console.log("\nEmployees that are Full Stack Residents:")
-
-users.map(user => {
-  if (user.role === 'Full Stack Resident') {
-    console.log(user.lastName);
-  }
-})
-
-console.log("\nInstructors' full names:")
-
-users.map(user => {
-  if (user.role === 'Instructor') {
-    console.log(user.firstName + " " + user.lastName);
-  }
-})
+console.log("\nInstructors' full names:");
+const instructorNames = users.filter(user => user.role === "Instructor").map(
+  filteredUser => filteredUser.firstName + " " + filteredUser.lastName);
+console.log(instructorNames);
