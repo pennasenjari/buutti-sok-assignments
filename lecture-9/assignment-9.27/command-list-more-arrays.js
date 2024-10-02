@@ -45,9 +45,13 @@ const functions = [
   function() { return false; } // Exit
 ];
 
-// Convert letters into numbers
-const letters = ["N", "E", "S", "W", "C", "B"]
+/* Convert commandList into array of numbers.
+   Use indexes in letters array to find 
+   corresponding number for each letter. */
+const letters = ["N", "E", "S", "W", "C", "B"]; // 0, 1, 2, 3, 4, 5
+// Split commandList into array of letters
 const commandArr = commandList.split("");
+// Convert the letters to numbers in place
 for (i = 0; i < commandArr.length; i++) {
   commandArr[i] = letters.indexOf(commandArr[i]);
 }
@@ -56,7 +60,7 @@ for (i = 0; i < commandArr.length; i++) {
 for (i = 0; i < commandArr.length; i++) {
   const ret = functions[commandArr[i]](); // true or false
   if (ret === false) {
-    // command = B = exit
+    // command B = exit
     break;
   }
 }
