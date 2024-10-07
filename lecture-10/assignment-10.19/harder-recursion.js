@@ -64,39 +64,50 @@ const array = [ 4, 19, 7, 1, 9, 22, 6, 13 ];
 const sorted = mergeSort(array);
 console.log(sorted); // prints [ 1, 4, 6, 7, 9, 13, 19, 22 ]
 EXTRA-extra: Add one more element to the above array. This makes it impossible
-  todivide the array into one even bits of 1, because it has an uneven amount 
+  to divide the array into one even bits of 1, because it has an uneven amount 
   of numbers.
 This forces you to handle a case of empty lists in mergeSubLists and make 
   a decision on how to split an array with an uneven number of elements 
   (whether to include the "extra" element on the left or right list). */
 
-//  HARDER INDEED... UNDER CONSTRUCTION
-
-const array = [ 4, 19, 7, 1, 9, 22, 6, 13 ];
-
 function mergeSort(array) {
-  console.log(array)
-
   if (array.length <= 1) {
-    // Array is empty or has one element -> do nothing
     return array;
+  } else {
+    const middleIndex = Math.floor(array.length / 2);
+    const leftHalf = array.slice(0, middleIndex);
+    const rightHalf = array.slice(middleIndex);
+    return mergeSubLists(mergeSort(leftHalf), mergeSort(rightHalf));    
+  } 
+} 
+
+function mergeSubLists(leftList, rightList) {
+  let sortedArray = [];
+  let i = 0, j = 0;
+  while (i < leftList.length && j < rightList.length) {
+    if (leftList[i] < rightList[j]) {
+      sortedArray.push(leftList[i]);
+      i++;
+    } else {
+      sortedArray.push(rightList[j]);
+      j++;
+    }
   }
-
-  // Base case: replace the array with two halves
-  let cutIndex = Math.floor(array.length / 2);
-  const leftSide = array.slice(0, cutIndex);
-  const rightSide = array.slice(cutIndex);
- 
-  mergeSort(array)
-//  return mergeSort(array)
+  while (i < leftList.length) {
+    sortedArray.push(leftList[i]);
+    i++;
+  }
+  while (j < rightList.length) {
+    sortedArray.push(rightList[j]);
+    j++;
+  }
+  return sortedArray;
 }
 
-function mergeSubLists(leftList, rightList = null) {
-
-  return leftList;
-}
-
-
+const array = [ 4, 19, 7, 1, 9, 22, 6, 13, 10 ];
 const sorted = mergeSort(array);
-console.log(sorted); // prints [ 1, 4, 6, 7, 9, 13, 19, 22 ]
-  
+console.log(sorted);
+/* prints [
+  1,  4,  6,  7, 9,
+ 10, 13, 19, 22
+] */
