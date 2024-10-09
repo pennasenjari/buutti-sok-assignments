@@ -14,34 +14,33 @@ Hint: The backslash character (\) is a special escape character in JS. Any part 
 
 Hint: You will benefit from the console.clear() command. */
 
-// NOTE: run in terminal: $ node spinner.js
+// NOTE: run this in terminal: $ node spinner.js
 
 const wait = (delay) => {
   const t = Date.now() + delay
   while(Date.now() < t) {}
 }
 
+// 4 lines cover the full circle!
 const lines = [
-  " |\n |\n |",
-  "  /\n /\n/",
-  "\n------\n",
-  "\\\n \\\n  \\",
-  " |\n |\n |",
-  "  /\n /\n/",
-  "\n------\n",
-  "\\\n \\\n  \\",
+  " |\n |\n |", // 3x (space pipe newline)
+  "  /\n /\n/", // space space slash newline space slash newline slash
+  "\n------\n", // newline (6x hyphen) newline
+  "\\\n \\\n  \\" // escape backslash newline space escape backslash newline...
 ];
 
 // My own extra
 const rounds = 3;
 
 console.clear();
-for (i = 1; i <= rounds; i++) {
-  for (let line of lines) {
-    console.log(`Spinning round ${i} of ${rounds}`);
-    console.log(line);
-    wait(200); // ms 
-    console.clear();
+for (i = 1; i <= rounds; i++) { 
+  for (j = 1; j <= 2; j++) { // Print 2x because lines array covers only half round
+    for (let line of lines) {
+      console.log(`Spinning round ${i} of ${rounds}`);
+      console.log(line);
+      wait(200); // ms 
+      console.clear();
+    }
   }
 };
 
