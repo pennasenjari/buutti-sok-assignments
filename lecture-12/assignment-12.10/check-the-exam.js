@@ -43,22 +43,29 @@ If using the above inputs, the output should be
 4
 25 */
 
-// NOTE: A comma missing in student_answers at row 9! Added manually.
+// NOTE: There was a comma missing in student_answers at row 9! Added manually.
 
 import fs from "fs";
 
+// Read the correct answers and student answers into arrays
 const correctAnswers = fs.readFileSync('correct_answers.txt', 'utf8').trim().split(",");
 const studentAnswers = fs.readFileSync('student_answers.txt', 'utf8').trim().split("\n");
+let scores = "";
 
+// Loop students
 for (const studentAnswer of studentAnswers) {
   const answers = studentAnswer.split(",");
   let score = 0;
+  // Loop student's answers
   for (let i = 0; i < answers.length; i++) {
     if (answers[i] === " ") {
+      // empty answer
       score += 0; // What's the point of adding 0?
     } else if (answers[i] === correctAnswers[i]) {
+      // correct answer
       score += 4;
     } else if (answers[i] !== correctAnswers[i]) {
+      // wrong answer
       score -= 1;
     }
   }
@@ -66,4 +73,9 @@ for (const studentAnswer of studentAnswers) {
     score = 0;
   }
   console.log(score);
+  // Add one score per line
+  scores += score + "\n";
 }
+
+// Write scores into a file
+fs.writeFileSync('student_scores.txt', `${scores}\n`);
