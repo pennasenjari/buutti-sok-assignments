@@ -1,0 +1,19 @@
+### Install Postman, Insomnia, or Rest Client (VSC Extension).
+### Send some requests to Cat as a service API
+### Get a picture of a random cat
+### Get a picture of a cat saying "I can haz JavaScript"
+### Get a JSON list of 20 cat pics (hint: use /api/cats with the limit parameter,
+### see the example in "Get JSON Data")
+### Extra: Do the same thing using curl command line tool.
+
+###
+GET https://cataas.com/cat
+
+###
+GET https://cataas.com/cat/says/I%20can%20haz%20JavaScript
+
+###
+GET https://cataas.com/cats?limit=20
+
+### Extra: curl (in terminal):
+### $curl https://cataas.com/cats?limit=20
