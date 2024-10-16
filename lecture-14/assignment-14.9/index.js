@@ -39,6 +39,7 @@ from "./utils.js";
 
 const reader = readline.createInterface(process.stdin, process.stdout);
 
+// My own extra
 function printHelp() {
   const help = [
     "H = Help (list available commands)",
@@ -127,7 +128,7 @@ async function runAPI() {
 
 function main() {
   console.clear();
-  console.log("\nWelcome to Buutti messages!")
+  console.log("\nWelcome to Buutti messages API!")
   printHelp();
   runAPI();
 }
