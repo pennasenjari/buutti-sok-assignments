@@ -32,7 +32,7 @@ Print the name of the product that was deleted. */
 
 import axios from "axios";
 
-// a) get proeducts
+// a) get products and print names
 async function getFakeStoreProducts() {
   try {
     const res = await axios.get('https://fakestoreapi.com/products');
@@ -42,8 +42,9 @@ async function getFakeStoreProducts() {
     return [];
   }
 }
-console.log("\nGet all products:")
-const fakeProducts = await getFakeStoreProducts().then((products) => { // also in c)
+console.log("\nAll available products:\n")
+// fakeProducts also in assignment c)
+const fakeProducts = await getFakeStoreProducts().then((products) => { 
   for (let product of products) {
     console.log(product.title)
   }
@@ -60,7 +61,7 @@ async function addFakeStoreProduct(title, price, description, category) {
       description: description,
       category: category
     });
-    return `Ádded product id ${res2.data.id}`;
+    return `Ádded. id: ${res2.data.id}`;
   } catch(error) {
     return error;
   }
@@ -81,6 +82,6 @@ async function deleteFakeStoreProduct(id) {
     return error;
   }
 }
-console.log(`\nDelete product id ${fakeProducts[0].id}`)
+console.log(`\nDeleting product with id ${fakeProducts[0].id}`)
 console.log(await deleteFakeStoreProduct(fakeProducts[0].id)); // fakeProducts from a)
 
