@@ -1,0 +1,82 @@
+<!-- INFINITE LOTTO NUMBERS
+Create a new lotto page, again with a h1 heading, a button , and an empty div.
+Add a click event listener to the button, that adds a new lotto number to the empty div
+ every time the button is pressed. If there already are seven numbers in the div,
+ remove the first number, so that the number of numbers remains seven.
+Extra: Make it impossible to get the same number twice at the same time (but allow
+ same number to appear again after it has disappeared from the list).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #lottoBox {
+      display: flex;
+      flex-direction: row;
+      height: 9vw;
+    }
+    .lottoNumber {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 9vw;
+      height: 9vw;
+      background-color: orange;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<h1>Lotto</h1>
+<div id="lottoBox"></div><br>
+<button id="draw">Draw a number</button>
+<script>
+
+const lottoBox = document.getElementById("lottoBox");
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function checkIfNumberExists(nbr) {
+  const existingNumbers = [];
+  lottoBox.childNodes.forEach((currentValue, currentIndex, listObj) => {
+    existingNumbers.push(parseInt(currentValue.innerText));
+  })
+  return existingNumbers.includes(nbr);
+}
+
+function getRandomNumber() {
+  while(true) {
+    let nbr = Math.floor(Math.random() * (40 - 1 + 1) + 1);
+    if (checkIfNumberExists(nbr) === false) {
+      return nbr;
+    };
+    getRandomNumber();
+  }
+}
+
+function createLottoBall(nbr) {
+  const div = document.createElement("div");
+  div.className = "lottoNumber";
+  const text = document.createTextNode(nbr);
+  div.appendChild(text);
+  return div;
+}
+
+document.getElementById("draw").addEventListener(("click"), () => {
+  const nbr = getRandomNumber();
+  if (lottoBox.childNodes.length >= 7) {
+    // We have 7 numbers already. Remove first number
+    lottoBox.removeChild(lottoBox.childNodes[0]);
+  }
+  // Add new number to the end
+  lottoBox.appendChild(createLottoBall(nbr));
+})
+</script> 
+</body>
+</html>

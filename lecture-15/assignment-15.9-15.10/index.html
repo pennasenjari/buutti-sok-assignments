@@ -1,0 +1,32 @@
+<!-- 15.9 SLIDER
+Create a web page with a green div. When the user clicks the rectangle, the colour
+ changes slightly from green to red, until the bar is completely red. When the div is
+ red and the user clicks it, the div disappears.
+Hint: You can set a green background with CSS
+  "background-color: rgb(0,255,0);" 
+  and red background color with 
+  "background-color: rgb(255,0,0);"
+Extra: Make the div wide at the beginning, and make the it shrink a bit on every click,
+ until on the last click it disappears completely.
+
+15.10 FILE SEPARATION
+Modify your previous assignment solution so that it has its code in three separate files:
+The HTML code should be in index.html file. This file should not include any styling
+ or scripts, just links to the appropriate files.
+The CSS code should be in style.css file.
+The JavaScript code should be in script.js file. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slider</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="slider"></div>
+<!-- Note: including script.js in head wouldn't work without modifications-->
+<script src="./scripts.js"></script>
+</body>
+</html>

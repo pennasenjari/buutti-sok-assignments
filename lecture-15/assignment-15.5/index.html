@@ -1,0 +1,50 @@
+<!-- LOTTO NUMBERS
+Create a new web page with a h1 heading "Lotto" and an empty div.
+Add a script, that randomizes seven numbers between 1 and 40, and inserts them to the div.
+Every time the page is refreshed, the script should randomize new numbers.
+Extra: Make the numbers appear inside orange circles.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #lottoBox {
+      display: flex;
+      flex-direction: row;
+    }
+    /* Note: responsive size */
+    .lottoNumber {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 10vw;
+      height: 10vw;
+      background-color: orange;
+      font-size: 5vw;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<h1>Lotto</h1>
+<div id="lottoBox"></div>
+<script>
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const lottoBox = document.getElementById("lottoBox");
+for(i = 0; i < 7; i++) {
+  const div = document.createElement("div");
+  div.className = "lottoNumber";
+  const text = document.createTextNode(randomIntFromInterval(1, 40));
+  div.appendChild(text);
+  lottoBox.appendChild(div);
+}
+</script> 
+</body>
+</html>

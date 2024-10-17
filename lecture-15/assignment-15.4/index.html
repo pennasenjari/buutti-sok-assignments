@@ -1,0 +1,47 @@
+<!-- NUMBER KEYBOARD
+Create a web page that has an empty input field and ten buttons labeled from 0 to 9.
+When user clicks a number button, the corresponding number should be added to the input field.
+
+Extra: Add a "backspace" button that removes the last character from the input field.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" id="number" value="0" disabled></button>
+  <button class="nbrButt">0</button>
+  <button class="nbrButt">1</button>
+  <button class="nbrButt">2</button>
+  <button class="nbrButt">3</button>
+  <button class="nbrButt">4</button>
+  <button class="nbrButt">5</button>
+  <button class="nbrButt">6</button>
+  <button class="nbrButt">7</button>
+  <button class="nbrButt">8</button>
+  <button class="nbrButt">9</button>
+  <!-- Extra -->
+  <button id="backspace"><--</button>
+  <script>
+    const nbrInput = document.getElementById("number");
+    const buttons = document.querySelectorAll(".nbrButt");
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        nbrInput.value = parseInt(nbrInput.value) + index;
+      });
+    });
+    // Extra
+    document.getElementById("backspace").addEventListener("click", () => {
+      if(nbrInput.value.length === 1) {
+        // prevent value becoming NaN
+        nbrInput.value = 0;
+      } else {
+        nbrInput.value = nbrInput.value.slice(0, -1);
+      }
+    })
+  </script>
+ </body>
+ </html>

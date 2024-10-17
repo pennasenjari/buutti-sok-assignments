@@ -1,0 +1,85 @@
+<!-- MORE LOTTO NUMBERS
+Create a new lotto page, this time with a h1 heading, a button, and an empty div.
+Add a click event listener to the button, that adds a new lotto number to the
+ empty div every time the button is pressed.
+Extra: Limit the generation so that after seven numbers no more new numbers are added.
+Extra: Allow for three extra numbers. The extra numbers should be visually separated
+ from the regular numbers.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #lottoBox {
+      display: flex;
+      flex-direction: row;
+      height: 8vw;
+      font-size: 5vw;
+      font-weight: bold;
+    }
+    .lottoNumber {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 8vw;
+      height: 8vw;
+      background-color: orange;
+    }
+    .plusSign {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8vw;
+      height: 8vw;
+    }
+  </style>
+</head>
+<body>
+<h1>Lotto</h1>
+<div id="lottoBox"></div><br>
+<button id="draw">Draw a number</button>
+<script>
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function createLottoBall(nbr) {
+  const div = document.createElement("div");
+  div.className = "lottoNumber";
+  const text = document.createTextNode(nbr);
+  div.appendChild(text);
+  return div;
+}
+
+const lottoNumbers = [];
+const lottoBox = document.getElementById("lottoBox");
+
+// NOTE: this does not prevent getting existing numbers again (not part of the assignment)
+document.getElementById("draw").addEventListener(("click"), () => {
+  if (lottoNumbers.length < 7) { // Extra 1
+    // Draw the basic numbers
+    const nbr = randomIntFromInterval(1, 40);
+    lottoNumbers.push(nbr);
+    lottoBox.appendChild(createLottoBall(nbr));
+  } else if (lottoNumbers.length < 10) { // Extra 2
+    if (lottoNumbers.length === 7) {
+      // Draw the + sign
+      const div = document.createElement("div");
+      div.className = "plusSign";
+      const text = document.createTextNode("+");
+      div.appendChild(text);
+      lottoBox.appendChild(div);
+    }
+    // Draw the extra numbers
+    const nbr = randomIntFromInterval(1, 40);
+    lottoNumbers.push(nbr)
+    lottoBox.appendChild(createLottoBall(nbr));
+  }
+})
+</script> 
+</body>
+</html>

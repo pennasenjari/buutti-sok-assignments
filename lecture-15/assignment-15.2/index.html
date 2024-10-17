@@ -1,0 +1,29 @@
+<!-- ALERT COUNTER
+Add a button to your page. Add an event handler function to the button that uses
+ the window.alert method to tell the user how many times they’ve clicked on the button so far.
+See https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
+
+For example, on first press the user should see a message box saying “Clicked 1 time(s)”,
+ on second press it should say “Clicked 2 time(s)”, and so on.
+
+Note: In real life, avoid using window.alert as it’s generally not great
+ for the user experience. Here it’s fine for educational purposes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="myButton">Klikkaa mua</button>
+  <script>
+    let clickCounter = 0;
+    document.getElementById("myButton").addEventListener("click", () => {
+      clickCounter++;
+      window.alert("Clicked " + clickCounter + " time(s).");
+    })
+  </script>
+ </body>
+ </html>

@@ -1,0 +1,22 @@
+<!-- HTML & JS
+Create a new index.html page with a <script> element. Inside the script element,
+ insert a JavaScript code that logs a random number between 1 and 100 to the console.
+Open your page in a browser and see that a new number is displayed in the development
+ tools console every time the page is reloaded.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<p>Logging numbers in console...</p>
+<script type="text/javascript">
+for (i = 0; i < 100; i++) {
+  console.log(`${(i + 1)}: ${parseInt(Math.random() * (100 - 1))}`);
+}
+</script>
+</body>
+</html>

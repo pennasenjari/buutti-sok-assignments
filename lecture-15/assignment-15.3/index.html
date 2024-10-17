@@ -1,0 +1,33 @@
+<!-- BETTER COUNTER
+Create a web page that has an input field with number zero in it. Add two buttons,
+ marked "+" and "-".
+Add event listeners to the buttons that increase and decrease the number in the input field. 
+
+Hint: Values in the input fields are strings. You need to convert it into a number
+ before you can add to it or remove from it.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" id="number" value="0"></button>
+  <button id="plus">+</button>
+  <button id="minus">-</button>
+  <script>
+    const nbrInput = document.getElementById("number");
+    let nbr = parseInt(nbrInput.value); // convert value to number
+    document.getElementById("plus").addEventListener("click", () => {
+      nbr++;
+      nbrInput.value = nbr;
+    });
+    document.getElementById("minus").addEventListener("click", () => {
+      nbr--;
+      nbrInput.value = nbr;
+    });
+  </script>
+ </body>
+ </html>

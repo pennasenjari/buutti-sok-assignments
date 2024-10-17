@@ -1,0 +1,80 @@
+<!-- 
+Create a new web page that has three div elements in it. Use CSS to make them visible
+ on the page. When the user clicks a div element, it should change colour. When the user
+ clicks the div element again, it should return to the original white colour.
+In effect, the div elements should work as checkboxes. The user can select as many as
+ they want, and remove the selections.
+Extra: Add three more div elements that work like radio buttons. When the user selects
+ a new radio button, the previously selected radio button gets automatically deselected, 
+ so that there can only be one radio button selected at any given time. User also can not 
+ deselect radio buttons.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display:flex;
+      flex-direction: column;
+    }
+    .row {
+      display:flex;
+      flex-direction: row;
+    }
+    .radioDiv, .radioDiv2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 5vh;
+      height: 5vh;
+      background-color: white;
+      border: 0.2vh dashed;
+      margin: 2vh;
+    } 
+    .selected {
+      background-color: blue;
+    } 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>Select any:</div>
+    <div class="row">
+      <div class="radioDiv">x</div> 
+      <div class="radioDiv">y</div> 
+      <div class="radioDiv">z</div>
+    </div>
+    <!-- Extra -->
+    <div>Select one:</div>
+    <div class="row">
+      <div class="radioDiv2">1</div> 
+      <div class="radioDiv2">2</div> 
+      <div class="radioDiv2">3</div> 
+    </div>
+  </div>
+  <script>
+const boxes = document.querySelectorAll(".radioDiv");
+boxes.forEach((box) => {
+  box.addEventListener("click", function() { // using "function" - arrow syntax didn't work
+    this.classList.toggle("selected");
+  });
+});
+// Extra
+const boxes2 = document.querySelectorAll(".radioDiv2");
+boxes2.forEach((box2) => {
+  box2.addEventListener("click", function() {
+    // Extra: reset all boxes 
+    boxes2.forEach((b) => {
+      b.className = "radioDiv";
+    });
+    // Select the clicked box
+    this.classList.toggle("selected");
+  });
+});
+  </script>
+</body>
+</html>
