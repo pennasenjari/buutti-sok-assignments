@@ -23,6 +23,7 @@ async function runWriter() {
   if (answer === 'q') { // lazy to write \q...
     console.log(`Writing file ${filename}`);
     fs.writeFileSync(filename, page, 'utf-8');
+    // Extra: repeat process
     answer2 = await reader.question(`Would you like to write another file (y/n)?\n`);
     if (answer2 === 'y') {
       filename = '';
