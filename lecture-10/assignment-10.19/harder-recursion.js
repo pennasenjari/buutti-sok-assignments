@@ -77,7 +77,7 @@ function mergeSort(array) {
     const middleIndex = Math.floor(array.length / 2);
     const leftList = array.slice(0, middleIndex);
     const rightList = array.slice(middleIndex);
-    // Recursively split the left and right both have only 1 element.
+    // Recursively split the left and right until both have only 1 element.
     // Then start merging the lists back together.
     return mergeSubLists(mergeSort(leftList), mergeSort(rightList));    
   } 
