@@ -7,13 +7,10 @@ Extra: Make the game progressively more difficult. Start with numbers between 1 
 
 Extra: Include subtraction and multiplication in the questions */
 
-//import readline from 'readline/promise';
+/* NOTE: run in terminal ($node math-game.js) */
+
 import readline from 'readline';
-
 const reader = readline.createInterface(process.stdin, process.stdout);
-
-console.clear();
-let questionCounter = 0;
 
 function randomNumber() {
   // Extra 1: progressively harder
@@ -26,8 +23,9 @@ function randomNumber() {
   }
 } 
 
-function runGame() {
+let questionCounter = 0;
 
+function runGame() {
   let num1 = randomNumber();
   let num2 = randomNumber();
   // Extra 2: subtraction and multiplication
@@ -47,4 +45,5 @@ function runGame() {
   })
 }
 
+console.clear();
 runGame();
