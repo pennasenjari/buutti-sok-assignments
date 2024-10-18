@@ -1,0 +1,31 @@
+<!-- 
+We have the following list of students:
+
+const students = [ 
+  { name: "Sami", score: 24.75 },
+  { name: "Heidi", score: 20.25 },
+  { name: "Jyrki", score: 27.5 },
+  { name: "Helinä", score: 26.0 },
+  { name: "Maria", score: 17.0 },
+  { name: "Yrjö", score: 14.5  } 
+];
+Create a HTML page with a "Toggle students" button. Add an event handler to the button
+ so that when it is pressed:
+
+if the students are not listed on the page, a table with the students and scores is added
+ into the page. (This is the behaviour when the user clicks the button first time)
+if the students are listed on the page, the table is removed 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Students</title>
+</head>
+<body>
+  <button id="toggle">Toggle students</button>
+  <div id="studentsBox"></div>
+  <script src="scripts.js"></script>   
+</body>
+</html>
