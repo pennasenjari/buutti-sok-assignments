@@ -10,13 +10,6 @@ function mergeSort(array) {
     // Split the array into left and right halves
     const leftHalf = array.slice(0, middleIndex);
     const rightHalf = array.slice(middleIndex);
-    console.log("\n\narray:")
-    console.log(array)
-    console.log("left half:")
-    console.log(leftHalf)
-    console.log("right half:")
-    console.log(rightHalf)
-    
 
     // Recursively sort each half
     const sortedLeft = mergeSort(leftHalf);
@@ -27,10 +20,6 @@ function mergeSort(array) {
 }
 
 function mergeSubLists(leftList, rightList) {
-    console.log("leftList:")
-    console.log(leftList)
-    console.log("rightList:")
-    console.log(rightList)
 
     let sortedArray = [];
     let i = 0, j = 0;

@@ -75,15 +75,20 @@ function mergeSort(array) {
     return array;
   } else {
     const middleIndex = Math.floor(array.length / 2);
-    const leftHalf = array.slice(0, middleIndex);
-    const rightHalf = array.slice(middleIndex);
-    return mergeSubLists(mergeSort(leftHalf), mergeSort(rightHalf));    
+    const leftList = array.slice(0, middleIndex);
+    const rightList = array.slice(middleIndex);
+    // Recursively split the left and right both have only 1 element.
+    // Then start merging the lists back together.
+    return mergeSubLists(mergeSort(leftList), mergeSort(rightList));    
   } 
 } 
 
 function mergeSubLists(leftList, rightList) {
+  /* Notes: merging starts when leftList and rightList have only 1 element each.
+     At the following rounds the lists get longer by the merging. */
   let sortedArray = [];
   let i = 0, j = 0;
+  // Loop left and right and pick the larger numbers
   while (i < leftList.length && j < rightList.length) {
     if (leftList[i] < rightList[j]) {
       sortedArray.push(leftList[i]);
@@ -93,6 +98,8 @@ function mergeSubLists(leftList, rightList) {
       j++;
     }
   }
+  // Append the remaining elements from both arrays. 
+  // They have already been sorted?!
   while (i < leftList.length) {
     sortedArray.push(leftList[i]);
     i++;
@@ -101,13 +108,9 @@ function mergeSubLists(leftList, rightList) {
     sortedArray.push(rightList[j]);
     j++;
   }
+
   return sortedArray;
 }
 
 const array = [ 4, 19, 7, 1, 9, 22, 6, 13, 10 ];
-const sorted = mergeSort(array);
-console.log(sorted);
-/* prints [
-  1,  4,  6,  7, 9,
- 10, 13, 19, 22
-] */
+console.log(mergeSort(array)); // [1, 4, 6, 7, 9, 10, 13, 19, 22]
