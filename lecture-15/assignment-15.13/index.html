@@ -1,0 +1,36 @@
+<!--
+sCreate a Tic Tac Toe game board using HTML, CSS, and JS. You can check some hints and
+ inspiration from the assignment 4.6 "X to the Win". The board should have a 3x3 grid.
+Each time the user clicks a square on the board, it is marked with either "X" or "O".
+The game starts with "X" and automatically alters between "X" and "O".
+
+If user clicks a square that has already been played (ie, it has "X" or "O" in it),
+ nothing happens.
+
+Extra: Add a "Reset" button that removes all markings from the board and changes the
+ next player back to "X".
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="tictactoe">
+  <div></div><div></div><div></div>
+  <div></div><div></div><div></div>
+  <div></div><div></div><div></div>
+</div>
+<div id="footer">
+  <div id="feedback"></div>
+  <div id="buttons">
+    <!-- Extra: reset button -->
+    <button id="newGameBtn" class="disabled">New game</button>
+  </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
