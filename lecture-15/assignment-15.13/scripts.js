@@ -46,11 +46,12 @@ function hasMark(gameArr, x, y) {
 }
 
 function checkWin() {
-  // Note: this function may be extendable to bigger game areas.
+  // Note: this function could be extended to bigger game areas.
 
   // convert nodeList to 2-dimensional array
   const gameArr = getGameArray();
-  let winMarks = [];
+  const winMarks = [];
+
   for (i = 0; i < gameArr.length; i++) { // loop rows
     for (j = 0; j < gameArr[i].length; j++) { // loop columns
       if (hasMark(gameArr, i, j)) {
@@ -63,7 +64,7 @@ function checkWin() {
           // A match! Check one more to same direction.
           if (hasMark(gameArr, i, (j + 2))) {
             // Three in a row! Win. Save location info to display the winning row.
-            winMarks=[[i, j],[i,(j + 1)], [i, (j + 2)]];
+            winMarks.push([[i, j],[i,(j + 1)], [i, (j + 2)]]);
             break;
             // To use more than 3 marks in a row (different game), extend here.
           }
@@ -72,7 +73,7 @@ function checkWin() {
         // check southeast
         if (hasMark(gameArr, (i + 1), (j + 1))) {
           if (hasMark(gameArr, (i + 2), (j + 2))) {
-            winMarks=[[i, j], [(i + 1), (j + 1)], [(i + 2), (j + 2)]];
+            winMarks.push([i, j], [(i + 1), (j + 1)], [(i + 2), (j + 2)]);
             break;
           }
         } 
@@ -80,7 +81,7 @@ function checkWin() {
         // check south
         if (hasMark(gameArr, (i + 1), j)) {
           if (hasMark(gameArr, (i + 2), j)) {
-            winMarks=[[i, j], [(i + 1), j], [(i + 2), j]];
+            winMarks.push([i, j], [(i + 1), j], [(i + 2), j]);
             break;
           }
         } 
@@ -88,15 +89,41 @@ function checkWin() {
         // check southwest
         if (hasMark(gameArr, (i - 1), (j + 1))) {
           if (hasMark(gameArr, (i - 2),(j + 2))) {
-            winMarks=[[i, j], [(i - 1), (j + 1)], [(i - 2), (j + 2)]];
+            winMarks.push([i, j], [(i - 1), (j + 1)], [(i - 2), (j + 2)]);
             break;
           }
         } 
-
       }
     }
   }
-  return winMarks;
+
+  // check for tie
+  let markCounter = 0;
+  for (i = 0; i < gameArr.length; i++) {
+    for (j = 0; j < gameArr[i].length; j++) {
+      if (gameArr[i][j].length > 0) {
+        markCounter++;
+      }
+    }
+  }
+
+  if (markCounter === squares.length && winMarks.length === 0) {
+    processTie();
+    return true;
+  } else if (winMarks.length === 3) {
+    processWin(winMarks);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function processTie() {
+  setFeedback(`It's a tie!`);
+  for (square of squares) {
+    // disable mouse clicks on squares
+    square.style.pointerEvents = 'none';
+  }
 }
 
 function processWin(winMarks) {
@@ -154,9 +181,8 @@ function main() {
         // square is free, add mark
         square.innerHTML = mark;
         // Check if the game was won
-        const winMarks = checkWin();
-        if (winMarks.length) {
-          processWin(winMarks);
+        if (checkWin() === true) {
+          // finish game
           return;
         } else {
           // toggle turn
