@@ -1,0 +1,35 @@
+<!--
+Create a web page with a 10x10 grid consisting of 100 individual <div> elements. 
+Use JavaScript to create the elements, so that your index.html page has just an empty
+ container and the JS script fills it with the 100 elements.
+
+Add functionality that if user clicks a square it turns black, enabling the user to draw
+ pixel art. If the user clicks a black square it turns back white.
+
+Extra: Add radio buttons from which the user can choose the colour. So if the user has
+ chosen red, all the following clicked squares become red.
+
+Extra (difficult): Use a colour input selector so that the user can choose any color.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel art</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>Pixel Art</h1>
+    Color: <input id="colorInput" value="#000000">
+  </div>   
+  <div id="main">
+    <div id="pixelArt"></div>
+  </div>
+</div>
+<script src="jscolor.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
