@@ -1,0 +1,35 @@
+<!--
+Create a web page with an empty list (<ul>), a text input, and a button. When user enters
+   an email address to the input field and presses the button, the email is first validated, 
+   and if found valid, added to the list. If the email is invalid, a message 
+   "Invalid email address" should appear under the input and the button.
+
+An email is considered valid if it has an @ symbol and at least one dot (.) after the @ symbol.
+
+Extra: Make the error message disappear when the user starts typing to the input field.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email list</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    Email list<br>
+  </div>   
+  <div id="main">
+    <input type="text" id="emailInput">
+    <button id="addButton">Add</button>
+    <div id="feedback"></div>
+    <ul id="emailList"></ul>
+  </div>
+  <div id="footer">
+  </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
