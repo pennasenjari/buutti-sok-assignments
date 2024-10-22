@@ -1,0 +1,57 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1em 0;
+}
+#game {
+  display: flex;
+  flex-direction: row;
+}
+#colorButtons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2em;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+}
+.hidden {
+  visibility: hidden;
+}
+.disabled {
+  pointer-events: none;
+}
+.enabled {
+  pointer-events: auto;
+}
+.colorButton {
+  width: 4em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}

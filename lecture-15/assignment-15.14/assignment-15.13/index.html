@@ -1,0 +1,42 @@
+<!--
+Create a web page with a heading "Color Game", four circles, and a text "Points: 0" in it. 
+Add a script file that every second changes the colours of the circles so that one of them
+ is red, one green, one blue, and one yellow, in different random order. 
+When the user clicks the red circle, the points increase by one. Nothing happens from the
+ other circles.
+
+ Extra: Start the points from 10, and make the points decrease when the player clicks
+ any other circle but the red one. Extra: If the points go below zero, the game ends. 
+The points text is replaced with the text "Game Over" and all the circles turn white. 
+
+Extra: Add a button to start the game, and to restart it if a game ends. Hide the button
+ when the game is ongoing.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Game</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    Color Game<br>
+    <div id="pointsText" class="hidden">&nbsp;</div>
+  </div>   
+  <div id="colorButtons">
+    <div class="colorButton"></div>
+    <div class="colorButton"></div>
+    <div class="colorButton"></div>
+    <div class="colorButton"></div>
+  </div>
+  <div id="footer">
+    <button id="startButton">New game</button>
+    <button id="stopButton" class="hidden">End game</button>
+  </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
