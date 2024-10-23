@@ -1,17 +1,18 @@
 Visual Studio Code has a lot of useful plugins. Whenever you feel something
-  could or should be easier in VSC, chances are there is a plugin for it. 
-  Most languages have their own plugins that make coding easier, and there are 
-  plugins that are small prorgrams inside VSC, such as tools to use Docker, Git or Azure.
+ could or should be easier in VSC, chances are there is a plugin for it. 
+Most languages have their own plugins that make coding easier, and there are 
+ plugins that are small prorgrams inside VSC, such as tools to use Docker, Git or Azure.
 
 All the README files on this course are written in Markdown. 
-  To enhance your Markdown experience, install Markdown Preview Enhanced.
-  After installing the plugin, use VSC to create a new file called markdowntest.md and try some markdown features.
+To enhance your Markdown experience, install Markdown Preview Enhanced.
+After installing the plugin, use VSC to create a new file called markdowntest.md and
+ try some markdown features.
 
 Sometimes you need to generate text to fill your web page just to see how text would look.
-  You could just keyboard smash it, but more elegant way is to use Lorem Ipsum.
-  Instead of copypasting from a web page, install the Lorem Ipsum plugin.
-  After installing the plugin, create a new file called loremtext.txt and generate
-  a few lines, and then a few paragraphs of pseudolatin in it.
+You could just keyboard smash it, but more elegant way is to use Lorem Ipsum.
+Instead of copypasting from a web page, install the Lorem Ipsum plugin.
+After installing the plugin, create a new file called loremtext.txt and generate
+ a few lines, and then a few paragraphs of pseudolatin in it.
 
 Some of the most important tools are often neglected. Install Bongo Cat and learn to use it.
 ---
