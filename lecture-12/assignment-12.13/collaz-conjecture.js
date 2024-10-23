@@ -1,4 +1,5 @@
 /* EXTRA
+
 Define a number n that is larger than 0, for example n = 3
 
 Create a function that given parameter n finds the number of steps it takes to reach number 1

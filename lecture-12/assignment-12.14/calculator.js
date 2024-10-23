@@ -1,4 +1,6 @@
-/* Create a class Calculator. The calculator has a method calculate(operator:
+/* EXTRA
+
+Create a class Calculator. The calculator has a method calculate(operator:
  string, n1: number, n2: number, ... ). The first parameter is the name of the operation,
  and the following parameters are an arbitrary amount of numeric parameters. 
  
