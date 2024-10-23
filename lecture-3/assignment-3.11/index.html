@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3.11</title>
+    <title>Assignment 3.11 - Forms</title>
   </head>
   <body>
-    <h1>Assignment 3.11</h1>
+    <h1>Assignment 3.11 - Forms</h1>
     <form>
       <label for="name">What is your name:</label><br>
       <input type="text" id="name" name="name"><br><br>
@@ -49,8 +49,35 @@
       </select><br><br>
 
       <label for="cv">Attach your CV:</label><br>
-      <input type="file" id="cv" name="cv"><br><br>
-
+      <input type="file" id="cv" name="cv">
+      <br><br>
+      <fieldset>
+        <legend>Choose your favorite monster</legend>
+    
+        <input type="radio" id="kraken" name="monster" value="K" />
+        <label for="kraken">Kraken</label><br />
+    
+        <input type="radio" id="sasquatch" name="monster" value="S" />
+        <label for="sasquatch">Sasquatch</label><br />
+    
+        <input type="radio" id="mothman" name="monster" value="M" />
+        <label for="mothman">Mothman</label>
+      </fieldset>
+      <br>
+      <!-- Extra 1: datalist -->      
+      <label for="ice-cream-choice">Choose a flavor:</label>
+      <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+      <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+      <br><br>
+      <!-- Extra 2: some other input --> 
+      <input type="week">
+      <br><br>
       <button type="submit">Send</button>
     </form>
   </body>

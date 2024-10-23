@@ -6,8 +6,10 @@ Buttons
 Use labels for all inputs.
 
 Extra: Add radio buttons or checkboxes (or both) to the page. 
-  Use a label for each selection. Extra: Go through documentation and 
-  add another input to the page that has not been covered in this material.
+  Use a label for each selection. 
+
+Extra: Go through documentation and add another input to the page that has not been
+ covered in this material.
 ---
 Done
 

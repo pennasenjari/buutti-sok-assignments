@@ -3,42 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML Table</title>
 </head>
 <body>
-
-  <!-- To save some manual work, copied the table code from Tilastokeskus web site
-     https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__matk/statfin_matk_pxt_11sl.px/table/tableViewLayout1/ -->
-  <table id="ctl00_ctl00_ContentPlaceHolderMain_cphMain_Table1_Table1_DataTable" class="table-class" aria-describedby="lblFullscreenTitle">
+  <table>
     <thead>
       <tr>
-        <th class="table-title" colspan="7">Hotellien vuosittainen kapasiteetti ja yöpymiset kunnittain muuttujina Kunta, Vuosi ja Tiedot, 2024</th>
+        <th colspan="7">Hotellien vuosittainen kapasiteetti ja yöpymiset kunnittain muuttujina Kunta, Vuosi ja Tiedot, 2024</th>
       </tr><tr>
-        <td class="table-header-first" colspan="1" rowspan="2">&nbsp;</td><th class="table-header-first" id="H120241" scope="col" colspan="6"></th>
+        <td colspan="1" rowspan="2">&nbsp;</td><th colspan="6"></th>
       </tr><tr>
-        <th class="table-header-last" id="H1huoneet1" scope="col" colspan="1">Huoneet, lkm</th><th class="table-header-last" id="H1keskihinta1" scope="col" colspan="1">Huoneen keskihinta</th><th class="table-header-last" id="H1vrk_hinta1" scope="col" colspan="1">Yöpymisen keskihinta</th><th class="table-header-last" id="H1yopyneet1" scope="col" colspan="1">Yöpymiset, lkm</th><th class="table-header-last" id="H1yopyneet_fi1" scope="col" colspan="1">Kotimaiset yöpymiset, lkm</th><th class="table-header-last" id="H1yopyneet_ul1" scope="col" colspan="1">Ulkomaiset yöpymiset</th>
+        <th colspan="1">Huoneet, lkm</th><th colspan="1">Huoneen keskihinta</th>
+        <th colspan="1">Yöpymisen keskihinta</th>
+        <th colspan="1">Yöpymiset, lkm</th>
+        <th colspan="1">Kotimaiset yöpymiset, lkm</th>
+        <th colspan="1">Ulkomaiset yöpymiset</th>
       </tr>
     </thead><tbody>
       <tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R0490.V0" rowspan="1" scope="row">Espoo</th><td class="table-data-filled" headers="R0490.V0 H120241 H1huoneet1">1 812</td><td class="table-data-filled" headers="R0490.V0 H120241 H1keskihinta1">91,38</td><td class="table-data-filled" headers="R0490.V0 H120241 H1vrk_hinta1">62,02</td><td class="table-data-filled" headers="R0490.V0 H120241 H1yopyneet1">241 674</td><td class="table-data-filled" headers="R0490.V0 H120241 H1yopyneet_fi1">174 866</td><td class="table-data-filled" headers="R0490.V0 H120241 H1yopyneet_ul1">66 808</td>
+        <th rowspan="1">Espoo</th>
+        <td >1 812</td>
+        <td >91,38</td>
+        <td >62,02</td>
+        <td >241 674</td>
+        <td >174 866</td>
+        <td >66 808</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R0911.V0" rowspan="1" scope="row">Helsinki</th><td class="table-data-filled" headers="R0911.V0 H120241 H1huoneet1">12 709</td><td class="table-data-filled" headers="R0911.V0 H120241 H1keskihinta1">125,86</td><td class="table-data-filled" headers="R0911.V0 H120241 H1vrk_hinta1">79,34</td><td class="table-data-filled" headers="R0911.V0 H120241 H1yopyneet1">2 408 286</td><td class="table-data-filled" headers="R0911.V0 H120241 H1yopyneet_fi1">1 285 146</td><td class="table-data-filled" headers="R0911.V0 H120241 H1yopyneet_ul1">1 123 140</td>
+        <th rowspan="1">Helsinki</th>
+        <td >12 709</td>
+        <td >125,86</td>
+        <td >79,34</td>
+        <td >2 408 286</td>
+        <td >1 285 146</td>
+        <td >1 123 140</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R1792.V0" rowspan="1" scope="row">Jyväskylä</th><td class="table-data-filled" headers="R1792.V0 H120241 H1huoneet1">1 480</td><td class="table-data-filled" headers="R1792.V0 H120241 H1keskihinta1">114,52</td><td class="table-data-filled" headers="R1792.V0 H120241 H1vrk_hinta1">72,02</td><td class="table-data-filled" headers="R1792.V0 H120241 H1yopyneet1">302 759</td><td class="table-data-filled" headers="R1792.V0 H120241 H1yopyneet_fi1">269 401</td><td class="table-data-filled" headers="R1792.V0 H120241 H1yopyneet_ul1">33 358</td>
+        <th rowspan="1">Jyväskylä</th>
+        <td >1 480</td>
+        <td >114,52</td>
+        <td >72,02</td>
+        <td >302 759</td>
+        <td >269 401</td>
+        <td >33 358</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R3983.V0" rowspan="1" scope="row">Lahti</th><td class="table-data-filled" headers="R3983.V0 H120241 H1huoneet1">848</td><td class="table-data-filled" headers="R3983.V0 H120241 H1keskihinta1">102,57</td><td class="table-data-filled" headers="R3983.V0 H120241 H1vrk_hinta1">61,25</td><td class="table-data-filled" headers="R3983.V0 H120241 H1yopyneet1">138 119</td><td class="table-data-filled" headers="R3983.V0 H120241 H1yopyneet_fi1">116 144</td><td class="table-data-filled" headers="R3983.V0 H120241 H1yopyneet_ul1">21 975</td>
+        <th rowspan="1">Lahti</th>
+        <td >848</td>
+        <td >102,57</td>
+        <td >61,25</td>
+        <td >138 119</td>
+        <td >116 144</td>
+        <td >21 975</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R5644.V0" rowspan="1" scope="row">Oulu</th><td class="table-data-filled" headers="R5644.V0 H120241 H1huoneet1">1 378</td><td class="table-data-filled" headers="R5644.V0 H120241 H1keskihinta1">123,79</td><td class="table-data-filled" headers="R5644.V0 H120241 H1vrk_hinta1">81,24</td><td class="table-data-filled" headers="R5644.V0 H120241 H1yopyneet1">303 310</td><td class="table-data-filled" headers="R5644.V0 H120241 H1yopyneet_fi1">261 012</td><td class="table-data-filled" headers="R5644.V0 H120241 H1yopyneet_ul1">42 298</td>
+        <th rowspan="1">Oulu</th>
+        <td >1 378</td>
+        <td >123,79</td>
+        <td >81,24</td>
+        <td >303 310</td>
+        <td >261 012</td>
+        <td >42 298</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R6985.V0" rowspan="1" scope="row">Rovaniemi</th><td class="table-data-filled" headers="R6985.V0 H120241 H1huoneet1">1 705</td><td class="table-data-filled" headers="R6985.V0 H120241 H1keskihinta1">208,14</td><td class="table-data-filled" headers="R6985.V0 H120241 H1vrk_hinta1">107,77</td><td class="table-data-filled" headers="R6985.V0 H120241 H1yopyneet1">412 192</td><td class="table-data-filled" headers="R6985.V0 H120241 H1yopyneet_fi1">123 731</td><td class="table-data-filled" headers="R6985.V0 H120241 H1yopyneet_ul1">288 461</td>
+        <th rowspan="1">Rovaniemi</th>
+        <td >1 705</td>
+        <td >208,14</td>
+        <td >107,77</td>
+        <td >412 192</td>
+        <td >123 731</td>
+        <td >288 461</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R8376.V0" rowspan="1" scope="row">Tampere</th><td class="table-data-filled" headers="R8376.V0 H120241 H1huoneet1">3 687</td><td class="table-data-filled" headers="R8376.V0 H120241 H1keskihinta1">119,19</td><td class="table-data-filled" headers="R8376.V0 H120241 H1vrk_hinta1">71,49</td><td class="table-data-filled" headers="R8376.V0 H120241 H1yopyneet1">764 182</td><td class="table-data-filled" headers="R8376.V0 H120241 H1yopyneet_fi1">675 783</td><td class="table-data-filled" headers="R8376.V0 H120241 H1yopyneet_ul1">88 399</td>
+        <th rowspan="1">Tampere</th>
+        <td >3 687</td>
+        <td >119,19</td>
+        <td >71,49</td>
+        <td >764 182</td>
+        <td >675 783</td>
+        <td >88 399</td>
       </tr><tr>
-        <th class="layout1-table-stub layout1-table-stub1" id="R0927.V0" rowspan="1" scope="row">Vantaa</th><td class="table-data-filled" headers="R0927.V0 H120241 H1huoneet1">2 895</td><td class="table-data-filled" headers="R0927.V0 H120241 H1keskihinta1">114,96</td><td class="table-data-filled" headers="R0927.V0 H120241 H1vrk_hinta1">74,30</td><td class="table-data-filled" headers="R0927.V0 H120241 H1yopyneet1">573 428</td><td class="table-data-filled" headers="R0927.V0 H120241 H1yopyneet_fi1">378 090</td><td class="table-data-filled" headers="R0927.V0 H120241 H1yopyneet_ul1">195 338</td>
+        <th rowspan="1">Vantaa</th>
+        <td >2 895</td>
+        <td >114,96</td>
+        <td >74,30</td>
+        <td >573 428</td>
+        <td >378 090</td>
+        <td >195 338</td>
       </tr>
     </tbody>
   </table>
-  
 </body>
 </html>
 

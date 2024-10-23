@@ -1,0 +1,22 @@
+Create a HTML page with the following form in it. 
+Get to know input types
+
+text input
+date input
+file input
+range input
+checkbox input
+radio input
+and different form elements
+
+label
+textarea
+fieldset and legend
+button
+select and option
+
+Extra: Get to know and use <datalist> elements. 
+
+Extra: Get to know a few more input types you have never tried before.
+---
+Done
