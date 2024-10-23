@@ -11,4 +11,4 @@ console.log("monkeys " + 6 + 6); // string + number = string
 console.log(6 + 6 + " monkeys"); // number + number = number
 
 // Fixed
-console.log("monkeys " + (6 + 6)); // string + number = string
+console.log("monkeys " + (6 + 6)); // numbers in parenthesis are calculated first
