@@ -42,6 +42,7 @@ function randomIntFromInterval(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// Extra:  Make it impossible to get the same number twice
 function checkIfNumberExists(nbr) {
   const existingNumbers = [];
   lottoBox.childNodes.forEach((currentValue, currentIndex, listObj) => {
