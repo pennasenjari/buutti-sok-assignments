@@ -1,4 +1,6 @@
-/* Merge-sort is a common recursive algorithm for sorting lists / arrays.
+/* EXTRA
+
+Merge-sort is a common recursive algorithm for sorting lists / arrays.
 
 It works by splitting the list into two, resursively sorting the sub-lists and
   then merging the lists back into one.

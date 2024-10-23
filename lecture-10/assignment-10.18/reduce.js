@@ -1,5 +1,6 @@
-/* Get practice with using Reduce by doing the following exercises:
+/* EXTRA
 
+Get practice with using Reduce by doing the following exercises:
 https://coursework.vschool.io/array-reduce-exercises/ */
 
 // 1) Turn an array of numbers into a total of all the numbers
