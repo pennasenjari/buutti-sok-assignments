@@ -4,8 +4,8 @@ Using switch statement, printout the final grade of the score.
 The score needs at least 2 to pass the test, otherwise the result is failed.
 Score of 2 is considered passed, 3 is good, 4 is very good and 5 is excellent. */
 
-const score = 1;
-
+const score = 5;
+console.log(`Score is ${score}.`);
 switch (score) {
   case 1:
     console.log("failed!");
