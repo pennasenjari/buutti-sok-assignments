@@ -1,4 +1,6 @@
-/* We can also put functions into arrays.
+/* EXTRA
+
+We can also put functions into arrays.
 
 Create a program where we have variables x and y coordinates representing the position of
   a robot, and a command string that tells the robot where it should move.

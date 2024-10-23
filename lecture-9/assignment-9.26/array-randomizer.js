@@ -1,4 +1,6 @@
-/* const array = [2, 4, 5, 6, 8, 10, 14, 18, 25, 32];
+/* EXTRA
+
+const array = [2, 4, 5, 6, 8, 10, 14, 18, 25, 32];
 Create a program that every time you run it, prints out an array with differently
   randomized order of the array above.
 
