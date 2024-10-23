@@ -1,4 +1,4 @@
-/* Using your knowledge of Bootstrap and what you’ve learned so far, 
+Using your knowledge of Bootstrap and what you’ve learned so far, 
   re-create the following page with HTML, Bootstrap and CSS. 
 Each icon and the text under it should be inside one element that’s a link 
   to the respective page.
@@ -13,4 +13,6 @@ Extra: Responsivity
 
 Make the page scale to different screen sizes. On a widescreen desktop monitor
   with a maximized browser window, the icons should be arranged as in a).
-On a small browser window, the icons should collapse into multiple rows like this: */
+On a small browser window, the icons should collapse into multiple rows like this:
+---
+Done

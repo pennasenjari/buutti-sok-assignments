@@ -1,8 +1,10 @@
-/* Create a new HTML document and add Bootstrap CSS to it.
+Create a new HTML document and add Bootstrap CSS to it.
 
 Using Bootstrap, re-create the layout below. You don’t need to add
  the purple border lines between the elements, they can be regular <div> elements
  with text content.
 
-Extra: make the columns stack on small browser windows */
+Extra: make the columns stack on small browser windows
+---
+Done
 

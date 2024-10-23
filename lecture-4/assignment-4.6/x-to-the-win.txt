@@ -1,7 +1,7 @@
-/* Create a web page with the attached code as its content. 
+Create a web page with the attached code as its content. 
 Change the layout of the page using Grid Layout, so that the page becomes 
-  a Tic-Tac-Toe board where the X has won the game. Do not change the HTML code
-  at all! Use only CSS.
+ a Tic-Tac-Toe board where the X has won the game. Do not change the HTML code
+ at all! Use only CSS.
 
 <div id="ticktacktoe">
   <div id="square1">X</div>
@@ -15,6 +15,7 @@ Change the layout of the page using Grid Layout, so that the page becomes
   <div id="square9"></div>
 </div>
 
-
 Extra: Make the grid of the board visible and center the X's and O's to 
-  the middle of the grid squares. */
+ the middle of the grid squares.
+---
+Done

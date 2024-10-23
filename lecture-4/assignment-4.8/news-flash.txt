@@ -1,4 +1,4 @@
-/* Take a look at the attached MarkDown file about a news article. 
+Take a look at the attached MarkDown file about a news article. 
 You can check the original article from yle.fi.
 
 Create a web page that has the same content as the markdown file has. 
@@ -16,4 +16,6 @@ In addition, the page should be in a single 600px wide column that is
 The images should be all 450 pixels wide. 
 The font size of the text outside image captions should be 18pt.
 
-Extra: Get to know and use <figure> and <figcaption> tags with the images. */
+Extra: Get to know and use <figure> and <figcaption> tags with the images.
+---
+Done
