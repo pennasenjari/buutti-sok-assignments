@@ -30,16 +30,15 @@ Extra: Add error handling. What if user gives an id that doesn't match any messa
 Modify your app so that it gives a sensible error message before returning 
  to the beginning state. */
 
-//import { student, allStudents, allCourses, totalCredits, totalAverage, addStudent,
-//  addCourse, getAverage, getCredits, setGrade, delCourse, delStudent } from "./utils.js";
-
 import readline from 'readline/promises'; // support await
 import { getAllMessages, getUserMessages, writeMessage, editMessage, deleteMessage }
 from "./utils.js";
 
 const reader = readline.createInterface(process.stdin, process.stdout);
 
-// My own extra
+// Extra done: some error handling added. 
+
+// My own extra: help function
 function printHelp() {
   const help = [
     "H = Help (list available commands)",
