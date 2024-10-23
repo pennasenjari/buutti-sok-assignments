@@ -1,4 +1,4 @@
-/* Get a piece of grid paper and outline a 10x10 square area. 
+Get a piece of grid paper and outline a 10x10 square area. 
 Inside the square area draw a dungeon game map that consists of wall squares
   and empty squares. The map should have an entrance and an exit, 
   with a clear path from the entrance to exit. 
@@ -94,3 +94,6 @@ Walk
 Turn(right)
 Open
 WalkMany(2) // Go out
+
+---
+Done

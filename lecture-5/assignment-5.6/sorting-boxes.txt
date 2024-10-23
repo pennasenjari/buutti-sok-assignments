@@ -1,4 +1,4 @@
-/* You have a bunch of small boxes in a line. The boxes are otherwise identical,
+You have a bunch of small boxes in a line. The boxes are otherwise identical,
   but some of them are blue and others are yellow. 
 Currently they are not organized in any way; the blue and yellow boxes are mixed
   together in a messy manner.
@@ -7,8 +7,7 @@ Design an algorithm for sorting the boxes so that the blue ones come first
   in the line and the yellow ones come after the blue ones. 
 The algorithm can do only one comparison at a time. 
 You can't say for example "take largest of the three numbers", 
-  since that would compare three numbers at the same time. */
-
+  since that would compare three numbers at the same time.
 ---
 
 // Sorting yellow and blue boxes, blue first
@@ -24,3 +23,5 @@ for i = 0 to line.length
       line[i] = line[j]
       line[j] = temp
     
+---
+Done

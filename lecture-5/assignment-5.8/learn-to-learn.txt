@@ -1,5 +1,5 @@
-/* Watch Neil Brown's How Your Mind Learns to Program from Youtube.
-https://www.youtube.com/watch?v=FAXAPBxkhxc */
+Watch Neil Brown's How Your Mind Learns to Program from Youtube.
+https://www.youtube.com/watch?v=FAXAPBxkhxc
 
 ---
 Done

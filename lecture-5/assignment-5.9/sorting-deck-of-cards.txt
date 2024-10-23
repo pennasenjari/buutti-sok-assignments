@@ -1,7 +1,8 @@
-/* Imagine that you have a deck of cards. If you have a deck of cards, get one.
+Imagine that you have a deck of cards. If you have a deck of cards, get one.
 Each card is numbered from 1 to 13, and for each number there are 4 cards 
-  with that number. Design an algorithm for sorting the deck of cards so that 
-  the numbers go from lowest to highest.
+ with that number.
+Design an algorithm for sorting the deck of cards so that the numbers go
+ from lowest to highest.
 
 EXTRA: Also take the suits (clubs, diamonds, hearts, spades) into account when sorting.
 
@@ -10,8 +11,7 @@ Reminder: It is best to do first the basic versions of all the assignments
 
 The basic versions of all the Homework Assignments
 The extras of the Homework Assignments
-The Extra Assignments */
-
+The Extra Assignments
 ---
 
 // Sorting deck of cards
@@ -62,3 +62,6 @@ for i = 1 to deck.length // pointer 1
       temp = deck[i]
       deck[i] = deck[j]
       deck[j] = temp
+
+---
+Done

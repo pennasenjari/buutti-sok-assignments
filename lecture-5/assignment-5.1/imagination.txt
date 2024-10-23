@@ -1,6 +1,6 @@
-/* With your group, think of the concept of programming for a couple of minutes:
+With your group, think of the concept of programming for a couple of minutes:
   what it is, what relates to it, etc.
-
 Can you think of a good definition for programming?
-
-Afterwards, share your thoughts with the class. */
+Afterwards, share your thoughts with the class.
+---
+Done
