@@ -1,0 +1,17 @@
+Open Notepad
+Copy the following text (JSON data) and paste it into Notepad
+Save the text to a new file named never.json in your subfolder for this assignment
+Make a copy of never.json using either the command line or File Explorer's Copy
+ functionality. Name the copy always.json. Open the copy, change the "never" line into 
+ "always" and save the file.
+
+{
+    "never": [
+        "gonna give you up",
+        "gonna let you down",
+        "gonna run around and desert you",
+        "gonna make you cry",
+        "gonna say goodbye",
+        "gonna tell a lie and hurt you"
+    ]
+} 
