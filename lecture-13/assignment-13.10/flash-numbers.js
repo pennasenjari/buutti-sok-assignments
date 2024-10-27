@@ -30,17 +30,47 @@ Easy: numbers 1 to 5, starting time 1500ms per number
 Normal: numbers 0 to 9, starting time 1000ms per number
 Hard: numbers 0 to 9 plus letters A,B,C and D, starting time 500ms per numer */
 
-import readline from 'readline';
+/* RUN IN TERMINAL: $node flash-numbers.js */
 
-// NOTE: run this program in terminal with node ($node flash-numbers.js)
-
+import readline from 'readline/promises';
 const reader = readline.createInterface(process.stdin, process.stdout);
 let points = 0;
-let numberAmount = 3;
-let delay = 3000;
+let difficulty = null; // to be asked from user
+let delay = null; // calculated based on difficulty and progress
+let toRememberAmount = 3; // Amount of numbers / letters to rememeber
 
-function getRandomNumber() {
-  return Math.floor(Math.random() * 10);
+async function askDifficulty() {
+  if (!difficulty) {
+    let answer = await reader.question(`Select your difficulty level by giving a number.\n\
+1 = Easy, 2 = Medium, 3 = Hard:\n`);
+    answer = parseInt(answer);
+    if (![1, 2, 3].includes(answer)) {
+      // Accept only 1, 2 or 3 as an answer
+      await askDifficulty();
+    } else {
+      difficulty = answer;
+      return true;
+    }
+  }
+}
+
+function getCharsToRemember() {
+  
+  const toRemember = [];
+  // difficulty 1, easy
+  const values = ['1', '2', '3', '4', '5']; 
+  if (difficulty === 2) {
+    // medium
+    values.push('6', '7', '8', '9');
+  } else if (difficulty === 3) { 
+    // hard
+    values.push('A', 'B', 'C', 'D');
+  }
+  for (let i = 0; i < toRememberAmount; i++) {
+    const randomIndex = Math.floor(Math.random() * values.length);
+    toRemember.push(values[randomIndex]);
+  }
+  return toRemember;
 }
 
 function addPoints() {
@@ -55,48 +85,75 @@ function addPoints() {
   } else if (delay <= 1750) {
     factor = 125;
   }
-  points += numberAmount * factor;
+  points += toRememberAmount * factor;
 }
 
-function runGame() {
+const wait = (delay) => {
+  const t = Date.now() + delay
+  while(Date.now() < t) {}
+}
 
-  const numbers = [];
-  for (let i = 0; i < numberAmount; i++) {
-    numbers.push(getRandomNumber());
+async function setDelay() {
+  // set initial delay, or reset to it when going under 1 s
+  if (!delay || delay < 1000)  {
+    switch(difficulty) {
+      case 1:
+        delay = 1500;
+        break;
+      case 2:
+        delay = 1000;
+        break;
+      case 3:
+        delay = 500;
+    }  
+  } else {
+    // Default: reduce delay by 0,25 s
+    delay -= 250;
   }
+  return true;
+}
 
-  console.log(`Please memorize these numbers: ${(numbers.toString()).replaceAll(',', ' ')}`);
+async function setToRememberAmount() {
+  // When delay goes under 1 s, add one character to be remembered
+  if (points > 0 && delay < 1000) { // do not add before first question (points 0)
+    toRememberAmount++;
+  }
+  return true;
+}
 
-  let answerOK = true;
+async function runGame() {
 
-  setTimeout(() => {
-    console.clear();
-    reader.question(`What were the numbers?\nSeparate numbers with spaces:\n`, (answer) => {
-      const numbersAnswered = answer.split(' ');
-      for (let i = 0; i < numberAmount; i++) {
-        if (parseInt(numbers[i]) !== parseInt(numbersAnswered[i])) {
-          console.log(`Wrong answer. You got ${points} points. Bye!`);
-          reader.close();
-          answerOK = false;
-          break;
-        } else {
-          console.log(`Correct :-)`);
-          addPoints();
-          // console.log(`Current points: ${points}`); // disabled, disturbs the game
-          if (delay >= 1000) {
-            delay -= 250;
-          } else {
-            numberAmount++;
-            delay = numberAmount * 1000;
-          }
-          runGame();
-          break;
-        }
+  await askDifficulty();
+  await setDelay();
+  await setToRememberAmount();
+  const toRemember = getCharsToRemember();
+  let isFail = false;
+  console.log(`Please memorize these: ${(toRemember.toString()).replaceAll(',', '')}`);
+  wait(delay);
+  console.clear();
+  let answer = await reader.question(`What were the numbers or letters?\n`);
+  if (!answer || answer.length !== toRememberAmount) {
+    isFail = true;
+  } else {
+    answer = answer.split('');
+    for (let i = 0; i < toRememberAmount; i++) {
+      if (toRemember[i].toUpperCase() !== answer[i].toUpperCase()) {
+        isFail = true;
+        break;
       }
-    })
-  }, delay)
+    }
+  }
+  if (isFail) {
+    console.log(`Wrong answer. You got ${points} points. Bye!`);
+    reader.close();
+    return;
+  }
+  console.log(`Correct :-)`);
+  addPoints();
+  // Loop questions
+  runGame();
 }
 
 console.clear();
-console.log(`Welcome to memory game.`);
+console.log(`Welcome to memory game!`);
 runGame();
