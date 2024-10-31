@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.wall {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row:nth-child(odd) {
+  margin-left: 25px; /* Offset each brick by half its width (50px / 2) */
+}
+
+.brick {
+  background-color: brown;
+  margin: 2px;
+  width: 50px;
+  height: 20px;
+  border-radius: 10%;
+}
