@@ -5,24 +5,34 @@
   text-align: center;
 }
 
-.wall {
+.brick-wall {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border: 5px solid white;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0px; /* Space between bricks */
 }
 
-.row:nth-child(odd) {
-  margin-left: 25px; /* Offset each brick by half its width (50px / 2) */
+.full-row {
+  grid-template-columns: repeat(10, 1fr); /* 10 full bricks */
+}
+
+.half-row {
+  grid-template-columns: 0.5fr repeat(9, 1fr) 0.5fr; /* Half brick in the beginning and end */
 }
 
 .brick {
-  background-color: brown;
-  margin: 2px;
-  width: 50px;
-  height: 20px;
-  border-radius: 10%;
+  background-color: #a52a2a; /* Brick color */
+  border: 1px solid #640c0c; /* Line around the brick */
+  padding-bottom: 50%; /* Brick height vs brick width */
+  border-radius: 2px;
+}
+
+.half-brick {
+  grid-column: span 0.5;
 }

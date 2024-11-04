@@ -1,7 +1,6 @@
-const Brick = () => {
-
+const Brick = ({ index }) => {
   return (
-    <div className="brick" />
+    <div className={index % 2 === 0 ? "brick" : "brick half-brick"}></div>
   )
 }
 

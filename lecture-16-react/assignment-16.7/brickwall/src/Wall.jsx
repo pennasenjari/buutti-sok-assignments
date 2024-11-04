@@ -2,15 +2,15 @@ import Row from './Row.jsx';
 
 const Wall = () => {
 
-  const rowsArray = Array.from({ length: 10 });
+  const numRows = 10;
 
   return (
-    <div className="wall">
-      {rowsArray.map((_, index) => (
-        <Row key={index} />
+    <div className="brick-wall">
+      {Array.from({ length: numRows }).map((_, rowIndex) => (
+        <Row key={rowIndex} brickCount={rowIndex % 2 === 0 ? 10 : 11} />
       ))}
     </div>
   );
-}
+};
 
 export default Wall;
