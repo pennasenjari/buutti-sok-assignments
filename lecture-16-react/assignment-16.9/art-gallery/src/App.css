@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery2 {
+  flex-direction: column;
+}
+
+.gallery3 .art1 img {
+  transform: rotate(-45deg);
+}
+
+.gallery3 .art2 img {
+  transform: rotate(-90deg);
+}
+
+.gallery3 .art3 img {
+  transform: rotate(180deg);
+}
+
+.gallery4 .art3 img {
+  animation: rotation 4s infinite linear;
+}
+
+img {
+  width: 200px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(255, 0, 0);
+  margin: 20px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
