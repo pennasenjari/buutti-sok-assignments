@@ -1,0 +1,222 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4f4f4f;
+  padding: 3px;
+}
+
+.headerLeft {
+  display: flex;
+}
+
+.headerRight {
+  display: flex;
+  align-items: end;
+}
+
+.headerLeft img {
+  margin-left: 24px;
+}
+
+.headerRight img {
+  margin-bottom: 4px;
+  margin-right: 24px;
+}
+
+.headerLink {
+  color: lightgray;
+  font-size: 12px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+}
+
+.menuWrapper img {
+  width: 146px;
+}
+
+.menuLeft {
+  display: flex;
+  width: 20%;
+  align-items: flex-start;
+}
+
+.menuRight {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuLink {
+  color: gray;
+  font-size: 15px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+
+.bigImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bigImage img {
+  max-width: 100%;
+}
+
+.references img {
+  max-width: 1000px;
+}
+
+.content {
+  flex-direction: row;
+  text-align: center;
+  padding: 0px 100px 100px 100px;
+}
+
+.content img {
+  width: 250px;
+  margin: 25px;
+}
+
+.content h1 {
+  font-size: 56px;
+  text-transform: uppercase;
+  color: rgb(68, 68, 68);
+  font-family: co-headline, sans-serif;
+  margin-bottom: 80px;
+}
+
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imageAndButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.imageAndButton button {
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.references {
+  text-align: center;
+}
+
+.footer {
+  flex-direction: row;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: #efefef;
+}
+
+.footer img {
+  width: 28vw;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(85, 85, 85);
+  font-family: co-headline, sans-serif;
+}
+
+/* Extra 1, Extra 2 */
+/* https://wpdean.com/css-dropdown-menus/ */ 
+
+#kitty-drop {
+  text-align:left;
+  display:inline;
+  margin:0;
+  padding:15px;
+  list-style:none;
+}
+
+#kitty-drop li{
+  display:inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 15px;
+  color: gray;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#kitty-drop li:hover {
+  background: transparent;
+  color: lightgray;
+}
+
+#kitty-drop li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+#kitty-drop li ul li { 
+  background: #333; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+
+#kitty-drop li ul li:hover { 
+  background: #555; 
+}
+
+#kitty-drop li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+a {
+  color: inherit;
+  text-decoration:none;
+}
