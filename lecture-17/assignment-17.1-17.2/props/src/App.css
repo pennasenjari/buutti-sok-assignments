@@ -1,0 +1,10 @@
+.instruments {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+
+.instrument img {
+  width: 150px;
+}
