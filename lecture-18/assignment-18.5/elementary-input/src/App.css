@@ -1,0 +1,30 @@
+.light {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 200px;
+  height: 200px;
+  font-size: 50px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.hidden {
+  display: none;
+}
