@@ -1,0 +1,17 @@
+.listOfItems {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.itemName {
+  width: 160px;
+}
+
+.gathered {
+  width: 80px;
+}
