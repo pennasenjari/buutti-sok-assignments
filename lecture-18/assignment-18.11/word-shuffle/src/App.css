@@ -1,0 +1,11 @@
+.keyboard {
+  margin-bottom: 20px;
+}
+
+.keyboard button {
+  margin-right: 10px;
+}
+
+.display button {
+  margin-top: 10px;
+}
