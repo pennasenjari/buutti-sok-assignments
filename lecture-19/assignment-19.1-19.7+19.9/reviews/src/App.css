@@ -1,0 +1,39 @@
+label, legend {
+  display: inline-block;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.visbile {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.customModalContent {
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  max-height: 400px; /* Set max-height for scroll */
+  overflow-y: auto; /* Enables vertical scroll */
+  background-color: lightgray;
+}
+
+.customModalContent div {
+  margin: 20px;
+}
+
+.customModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
