@@ -1,0 +1,19 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageBrowser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageBrowser div {
+  margin: 10px;
+}
+
+.imageBrowser img  {
+  width: 400px;
+}
