@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.word {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.word div {
+  margin-right: 10px;
+}
+
+input {
+  width: 16px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
