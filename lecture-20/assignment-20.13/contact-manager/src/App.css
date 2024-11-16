@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftColumn {
+  min-width: 200px;
+  min-height: 300px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.rightColumn {
+  min-width: 320px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+.deleteIcon, .editIcon {
+  width: 14px;
+  height: 14px;
+}
+
+img {
+  margin-left: 8px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  margin-right: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.contactLabel {
+  display: block;
+  font-style: italic;
+  min-width: 100px;
+  margin-right: 10px;
+}
