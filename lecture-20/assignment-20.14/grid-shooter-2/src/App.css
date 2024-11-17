@@ -1,0 +1,25 @@
+.game-over-visible {
+  width: 420px;
+  height: 420px;
+}
+
+.game-over-hidden {
+  display: none;
+}
+
+.points {
+  width: 420px;
+  text-align: center;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: underline;
+}
