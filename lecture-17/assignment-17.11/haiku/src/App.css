@@ -1,0 +1,21 @@
+.haiku {
+  display: flex;
+  flex-direction: row;
+}
+
+.haiku .left, .haiku .right {
+  padding: 0px 10px;
+}
+
+.haiku .left {
+  text-align: right;
+}
+
+.haiku .center {
+  width: 1px;
+  background-color: lightgray;
+}
+
+.haikuImageLeft {
+  transform: scaleX(-1);
+}
