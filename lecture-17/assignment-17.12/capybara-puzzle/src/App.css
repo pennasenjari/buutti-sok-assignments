@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Two columns sized to fit content */
+  gap: 0; /* No space between rows or columns */
+  width: fit-content; /* Shrink grid to fit its content */
+}
+
+.puzzle img {
+  display: block; /* Removes inline spacing */
+  margin: 0; /* Removes any margin around the images */
+}
