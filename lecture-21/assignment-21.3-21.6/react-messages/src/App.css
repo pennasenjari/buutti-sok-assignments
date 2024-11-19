@@ -1,0 +1,18 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+}
+
+.message .user, .message .text {
+  padding: 5px;
+}
+
+.message .user {
+  min-width: 60px;
+  font-weight: bold;
+}
