@@ -1,0 +1,44 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+}
+
+.message .user, .message .text {
+  padding: 5px;
+}
+
+.message .user {
+  min-width: 60px;
+  font-weight: bold;
+}
+
+.customModalContent {
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  max-height: 400px; /* Set max-height for scroll */
+  overflow-y: auto; /* Enables vertical scroll */
+  background-color: lightgray;
+}
+
+.customModalContent div {
+  margin: 20px;
+}
+
+.customModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+button {
+  margin-left: 10px;
+}
