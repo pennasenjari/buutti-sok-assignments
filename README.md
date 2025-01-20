@@ -1,2 +1,2 @@
-# Assignments of Buutti Oy's Starttipaketti Ohjelmistokehitykseen course
-## September - December 2024
+# Assignments of Starttipaketti Ohjelmistokehitykseen course
+## Buutti Oy, September - December 2024
